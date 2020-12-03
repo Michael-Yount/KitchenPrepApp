@@ -1,3 +1,22 @@
+body {
+    background-color: rgb(42, 56, 56);
+}
+
 #jumbotron {
-    background: rgb(110, 177, 177);
+    background: rgb(87, 96, 102);
+}
+
+.appTitle {
+    font-family: 'Spectral', serif;
+    font-size: 70px;
+    color: aliceblue;
+}
+#navbarDropdown {
+    background-color: darkcyan;
+}
+#menuLabel1 {
+    color: aliceblue;
+}
+#menuLabel2 {
+    color: aliceblue;
 }
