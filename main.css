@@ -18,6 +18,22 @@ body {
 }
 #menuLabel1 {
     color: aliceblue;
+    font-size: 30px;
+    /* padding: 0 250px 0 0; */
+}
+#menuLabel2 {
+    color: aliceblue;
+    font-size: 30px;
+    margin-right: 30px;
+}
+.coldPrepHeading {
+    color: rgb(231, 244, 255);
+    background: rgb(64, 92, 141);
+    text-align: center;
+}
+
+.card {
+    background: rgb(165, 165, 207);
 }
 
 .footer {
