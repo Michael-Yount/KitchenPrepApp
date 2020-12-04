@@ -10,10 +10,18 @@ body {
     font-family: 'Spectral', serif;
     font-size: 70px;
     color: aliceblue;
+    
+    
 }
 #navbarDropdown {
     background-color: darkcyan;
 }
 #menuLabel1 {
     color: aliceblue;
+}
+
+.footer {
+    content: "\00A9";
+    color: aliceblue;
+    /* margin-top: px; */
 }
