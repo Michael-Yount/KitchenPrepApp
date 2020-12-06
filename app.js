@@ -4,6 +4,6 @@ const areaBtn = document.getElementById('areaBtn').addEventListener('submit', (e
 });
 
 //add inventory tags from custom list
-const listItem = listItem ;
+
 
 

@@ -16,24 +16,34 @@ body {
 #navbarDropdown {
     background-color: darkcyan;
 }
-#menuLabel1 {
+#menuLabel1, .menuLabel2 {
     color: aliceblue;
     font-size: 30px;
     /* padding: 0 250px 0 0; */
 }
-#menuLabel2 {
+/* #menuLabel2 {
     color: aliceblue;
     font-size: 30px;
     margin-right: 30px;
-}
+} */
 .coldPrepHeading {
     color: rgb(231, 244, 255);
     background: rgb(64, 92, 141);
     text-align: center;
+    border-radius: 50px;
 }
 
-.card {
+.card{
     background: rgb(165, 165, 207);
+    border-radius: 75px 50px 75px 50px;
+}
+.oystImg, .lobstImg {
+    border-radius: 50px 50px 50px 50px;
+    filter: drop-shadow(10px 10px 10px);
+}
+.enterBtn {
+    border-radius: 30px;
+    filter: drop-shadow(10px 10px 10px rgb(46, 46, 48));
 }
 
 .footer {
