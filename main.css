@@ -1,24 +1,32 @@
 body {
-    background-color: rgb(42, 56, 56);
+    background-color: rgb(229, 255, 240);
 }
 
 #jumbotron {
-    background: rgb(87, 96, 102);
+    background: rgb(205, 255, 234);
+}
+#puffsImg{
+    filter: opacity(50%);
 }
 
 .appTitle {
     font-family: 'Spectral', serif;
     font-size: 70px;
-    color: aliceblue;
+    font-weight: bolder;
+    color: rgb(41, 40, 134);
+    padding-left: 60%;
     
     
 }
 #navbarDropdown {
-    background-color: darkcyan;
+    background-color: rgb(80, 180, 147);
 }
 #menuLabel1, #menuLabel2 {
-    color: aliceblue;
+    color: rgb(10, 41, 9);
     font-size: 30px;
+    border-radius: 25px;
+    background: rgb(214, 150, 60);
+    filter: drop-shadow(5px 5px 5px black);
     /* padding: 0 250px 0 0; */
 }
 /* #menuLabel2 {
