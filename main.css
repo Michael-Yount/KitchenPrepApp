@@ -5,6 +5,7 @@ body {
 
 #jumbotron {
     background: rgb(205, 255, 234);
+    margin: 0;
 }
 #puffsImg{
     filter: opacity(50%);
