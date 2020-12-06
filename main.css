@@ -16,7 +16,7 @@ body {
 #navbarDropdown {
     background-color: darkcyan;
 }
-#menuLabel1, .menuLabel2 {
+#menuLabel1, #menuLabel2 {
     color: aliceblue;
     font-size: 30px;
     /* padding: 0 250px 0 0; */
@@ -34,8 +34,9 @@ body {
 }
 
 .card{
-    background: rgb(165, 165, 207);
+    background: rgb(241, 241, 255);
     border-radius: 75px 50px 75px 50px;
+    filter: drop-shadow(10px 10px 10px);
 }
 .oystImg, .lobstImg {
     border-radius: 50px 50px 50px 50px;
