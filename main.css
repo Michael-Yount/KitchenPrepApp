@@ -5,6 +5,7 @@ body {
 
 #jumbotron {
     background: rgb(39, 158, 65);
+    border-radius: 25px;
     /* margin: 0; */
 }
 #puffsImg{
@@ -30,6 +31,7 @@ backBtn {
 #navbarDropdown {
     /* background-color: rgb(255, 216, 216); */
     background: linear-gradient(rgb(223, 229, 255), rgb(151, 151, 151));
+    border-radius: 25px;
     /* margin: 0; */
 }
 #menuLabel1, #menuLabel2 {
