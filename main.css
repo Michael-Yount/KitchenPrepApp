@@ -9,7 +9,7 @@ body {
     /* margin: 0; */
 }
 #puffsImg{
-    filter: opacity(50%);
+    filter: opacity(75%);
     height: 70px;
     width: 70px;
 
