@@ -4,7 +4,6 @@ body {
 }
 
 #jumbotron {
-<<<<<<< HEAD
     background: rgb(39, 158, 65);
 }
 #puffsImg{
@@ -31,27 +30,6 @@ backBtn {
     /* background-color: rgb(255, 216, 216); */
     background: linear-gradient(rgb(223, 229, 255), rgb(151, 151, 151));
     /* margin: 0; */
-=======
-  background: rgb(205, 255, 234);
-  margin: 0;
-}
-#puffsImg {
-  filter: opacity(50%);
-}
-
-.appTitle {
-  font-family: 'Spectral', serif;
-  font-size: 70px;
-  font-weight: bolder;
-  color: rgb(41, 40, 134);
-  padding-left: 40%;
-  margin: 0;
-
-
-}
-#navbarDropdown {
-  background-color: rgb(80, 180, 147);
->>>>>>> d896c6ff2da778a80aefdf7fc82cbcfbc96722ee
 }
 #menuLabel1, #menuLabel2 {
   color: rgb(10, 41, 9);
