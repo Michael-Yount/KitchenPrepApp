@@ -24,15 +24,21 @@ backBtn {
     font-size: 70px;
     font-weight: bolder;
     color: rgb(255, 255, 255);
-    padding-left: 60%;
+    /* padding-left: 60%; */
     
     
 }
 #navbarDropdown {
     /* background-color: rgb(255, 216, 216); */
-    background: linear-gradient(rgb(223, 229, 255), rgb(151, 151, 151));
+    background: linear-gradient(rgb(243, 222, 241), rgb(102, 101, 101));
     border-radius: 25px;
+    margin: 25px;
     /* margin: 0; */
+}
+
+.recipeList {
+    margin: 20px;
+    border-radius: 25px;
 }
 #menuLabel1, #menuLabel2 {
   color: rgb(10, 41, 9);
