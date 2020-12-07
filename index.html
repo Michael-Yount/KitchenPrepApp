@@ -16,10 +16,13 @@
     <title>Kitchen Prep App</title>
   </head>
         <body>
-                   <div class="jumbotron  nav justify-content-center" id="jumbotron">
+                   <div class="jumbotron mx-auto" id="jumbotron">
+                     <!-- <div class="float-left"> -->
+        
+                    <img src="/referenceLibrary/images/broccoliSilou.png" class="img-fluid "  alt="broccoli"  id="puffsImg" >
+
                                   <h1 class="appTitle" id="appTitle">Kitchen Prep</h1>
-                                  <!-- <img src="/referenceLibrary/images/potatoPuffs.png"alt=""  id="puffsImg"> -->
-                    </div>
+                     </div>
                               <nav class="navbar navbar-expand-lg navbar-lt" id="navbarDropdown">
                                       <nav class="nav-item dropdown">
                                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" id="menuLabel1">Prep Areas</a>
@@ -31,9 +34,9 @@
                                                                   <a class="dropdown-item" href="#">Separated link</a>
                                                            </div>
                                         </nav>
-                                        <nav class="navbar navbar-expand-lg navbar-dark" id="navbarDropdown">
+                                        <nav class="navbar navbar-expand-lg navbar-dark" id="navbarDropdown2">
                                           <nav class="nav-item dropdown">
-                                                   <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" id="menuLabel1">Inventory</a>
+                                                   <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" id="menuLabel2">Inventory</a>
                                                             <div class="dropdown-menu">
                                                                    <a class="dropdown-item" href="/coldPrep.html">Cold Prep</a>
                                                                     <a class="dropdown-item" href="#">Saute Station</a>
@@ -54,13 +57,52 @@
                                                                         <a class="dropdown-item" href="#">Separated link</a>
                                                                    </div>
                                          </nav> -->
-                                </nav>
+                                        </nav>
+                              </nav>
+                              
                                 <div class="container-fluid">
                                   <select class="form-control form-control-lg">
+                                    <option>Quick Recipe Select</option>
+                                    <option>white sauce</option>
+                                    <option>alfredo sauce</option>
+                                    <option>marinara sauce</option>
+                                    <option></option>
+                                    <option>Prep Item Select</option>
+                                    <option>Prep Item Select</option>
+                                    <option>Prep Item Select</option>
+                                    <option>Prep Item Select</option>
+                                    <option>Prep Item Select</option>
+                                    <option>Prep Item Select</option>
+                                    <option>Prep Item Select</option>
+                                    <option>Prep Item Select</option>
+                                    <option>Prep Item Select</option>
+                                    <option>Prep Item Select</option>
+                                    <option>Prep Item Select</option>
+                                    <option>Prep Item Select</option>
+                                    <option>Prep Item Select</option>
                                     <option>Prep Item Select</option>
                                     <option>Prep Item Select</option>
 
+
                                   </select>
+                                </div>
+                                <div class="container">
+                                  <div class="row">
+                                    <div class="col s12">
+                                      <div id="main" class="card">
+                                        <span class="card-title prepList">Prep List</span>
+                                        <div class="row">
+                                          <form id="task-form">
+                                            <div class="input-field col s12">
+                                              <input type="text" name="prep" id="prep">
+                                              <label for="task">New prep</label>
+                                            </div>
+                                            <input type="submit" value="Add Prep" class="prepListBtn">
+                                          </form>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
                                 </div>
                                 <!-- picture carosel -->
                                 <!-- <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
