@@ -1,11 +1,14 @@
 body {
-  background-color: rgb(229, 255, 240);
+  background-color: rgb(93, 137, 139);
   /* margin: 0; */
 }
 
 #jumbotron {
     background: rgb(39, 158, 65);
     border-radius: 25px;
+    margin-top: 20px;
+    border: 1px solid;
+    color: aliceblue;
     /* margin: 0; */
 }
 #puffsImg{
@@ -30,21 +33,29 @@ backBtn {
 }
 #navbarDropdown {
     /* background-color: rgb(255, 216, 216); */
-    background: linear-gradient(rgb(243, 222, 241), rgb(102, 101, 101));
-    border-radius: 25px;
-    margin: 25px;
+    background: linear-gradient(rgb(255, 253, 255), rgb(70, 68, 68));
+    border-radius: 15px;
+    margin: 15px;
     /* margin: 0; */
 }
 
+.stoveKnob {
+    height: 50px;
+    filter: drop-shadow(10px 10px 10px black);
+    margin: 15px;
+}
+
 .recipeList {
-    margin: 20px;
-    border-radius: 25px;
+    /* margin: 20px; */
+    border-radius: 10px;
+    border: 2px solid rgb(235, 255, 56);
+    filter: drop-shadow(10px 10px 10px rgb(87, 87, 87));
 }
 #menuLabel1, #menuLabel2 {
-  color: rgb(10, 41, 9);
+  color: rgb(0, 0, 0);
   font-size: 20px;
   border-radius: 25px;
-  background: rgb(214, 150, 60);
+  background: rgb(235, 157, 48);
   filter: drop-shadow(5px 5px 5px black);
   padding: 20px;
 }
@@ -67,9 +78,11 @@ font-size: 30px;
 
 .card{
     background: rgb(241, 241, 255);
-    border-radius: 5px 5px 5px 5px;
+    border-radius: 15px 15px 15px 15px;
     filter: drop-shadow(10px 10px 10px);
     padding: 20px;
+    margin: 20px;
+    text-align: center;
 }
 .oystImg, .lobstImg {
   border-radius: 50px 50px 50px 50px;
