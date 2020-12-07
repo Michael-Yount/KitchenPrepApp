@@ -41,7 +41,8 @@ backBtn {
 }
 
 .prepList {
-
+text-align: center;
+font-size: 30px;
 }
 /* #menuLabel2 {
     color: aliceblue;
