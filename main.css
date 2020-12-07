@@ -33,11 +33,11 @@ backBtn {
 }
 #menuLabel1, #menuLabel2 {
   color: rgb(10, 41, 9);
-  font-size: 30px;
+  font-size: 20px;
   border-radius: 25px;
   background: rgb(214, 150, 60);
   filter: drop-shadow(5px 5px 5px black);
-  padding: 5px;
+  padding: 20px;
 }
 
 .prepList {
@@ -55,18 +55,11 @@ backBtn {
   border-radius: 50px;
 }
 
-<<<<<<< HEAD
 .card{
     background: rgb(241, 241, 255);
     border-radius: 5px 5px 5px 5px;
     filter: drop-shadow(10px 10px 10px);
     padding: 20px;
-=======
-.card {
-  background: rgb(241, 241, 255);
-  border-radius: 75px 50px 75px 50px;
-  filter: drop-shadow(10px 10px 10px);
->>>>>>> d896c6ff2da778a80aefdf7fc82cbcfbc96722ee
 }
 .oystImg, .lobstImg {
   border-radius: 50px 50px 50px 50px;
