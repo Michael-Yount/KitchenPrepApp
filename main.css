@@ -54,10 +54,10 @@ backBtn {
 #menuLabel1, #menuLabel2 {
   color: rgb(0, 0, 0);
   font-size: 20px;
-  border-radius: 25px;
+  border-radius: 15px;
   background: rgb(235, 157, 48);
   filter: drop-shadow(5px 5px 5px black);
-  padding: 20px;
+  padding: 10px;
 }
 
 .prepList {

@@ -1,16 +1,15 @@
-//load all event listeners
-loadEventListeners();
+
 
 
 //press area of prep button
-const areaBtn = document.getElementById('areaBtn').addEventListener('submit', (e) => {
-    console.log(areaBtn);
-});
+// const areaBtn = document.getElementById('areaBtn').addEventListener('submit', (e) => {
+    // console.log(areaBtn);
+// });
 
 // Back button 
-const backBtn = document.getElementById('backBtn').addEventListener('submit', (e) => {
+// const backBtn = document.getElementById('backBtn').addEventListener('submit', (e) => {
 
-})
+// })
 
 //add inventory tags from custom list
 
@@ -21,10 +20,19 @@ const clearBtn = document.querySelector('.clear-preps');
 const filter = document.querySelector('#filter');
 const prepInput = document.querySelector('#prep');
 
+//load all event listeners
+loadEventListeners();
+
 //load all event listeners 
 function loadEventListeners() {
     //add task event
     form.addEventListener('submit', addPrep);
+    //remove prep event
+    prepList.addEventListener('click', removePrep); 
+    //clear task event
+    clearBtn.addEventListener('click', clearPreps);
+    // filter prep
+    filter.addEventListener('keyup', filterPreps);
 }
 //Add prep
 function addPrep(e) {
@@ -32,7 +40,54 @@ function addPrep(e) {
         alert('Add a Prep');
     }
 
+    //create li element
+    const li = document.createElement('li');
+    //add class
+    li.className = 'collection-item';
+    //create text node and append li to it 
+    li.appendChild(document.createTextNode(prepInput.value));
+//create new link element
+const link = document.createElement('a');
+//Add class
+link.className = 'delete-item secondary-content';
+//add icon html
+link.innerHTML = '<i class="fa fa-remove"></i>';
+//append link to li
+li.appendChild(link);
+// append li to ul
+prepList.appendChild(li);
+//clear input
+prepInput.value = '';
+
     e.preventDefault();
 }
+
+function removePrep(e) {
+    if(e.target.parentElement.classList.contains('delete-item')) {
+        if(confirm('Are you sure?'))
+        e.target.parentElement.parentElement.remove();
+    }
+}
+
+function clearPreps() {
+    while(prepList.firstChild) {
+        prepList.removeChild(prepList.firstChild);
+    }
+}
+//Filter preps
+function filterPreps(e) {
+    const text = e.target.value.toLowerCase();
+
+    document.querySelectorAll('.collection-item').forEach
+    (function(prep){
+        const item = prep.firstChild.textContent;
+        if(item.toLowerCase().indexOf(text) != -1){
+            prep.style.display = 'block';
+        } else {
+            prep.style.display = 'none';
+        }
+    })
+}
+
 
 
