@@ -20,10 +20,11 @@ const clearBtn = document.querySelector('.clear-preps');
 const filter = document.querySelector('#filter');
 const prepInput = document.querySelector('#prep');
 // const customPrepAreaInput = document.getElementById('#customPrepAreaInput');
-
+//drag n drop
+const draggables = document.querySelectorAll('.prepTag');
+const dropCntainers = document.querySelectorAll('.containerPrepList')
 //load all event listeners
 loadEventListeners();
-
 //load all event listeners 
 function loadEventListeners() {
     //add task event
@@ -118,6 +119,5 @@ function filterPreps(e) {
         }
     })
 }
-
 
 
