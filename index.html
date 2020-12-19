@@ -37,7 +37,7 @@
                                             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" id="menuLabel1">Prep Areas</a>
                                                         <div class="dropdown-menu">
                                                                <a class="dropdown-item" href="/coldPrep.html">Cold Prep</a>
-                                                                <a class="dropdown-item" href="#">Saute Station</a>
+                                                                <a class="dropdown-item" href="">Saute Station</a>
                                                                 <a class="dropdown-item" href="#">Broiler Station</a>
                                                           <div class="dropdown-divider"></div>
                                                                   <input type="" class="dropdown-item" href="#" placeholder="custom prep area" id="customPrepAreaInput"></a>
@@ -69,33 +69,40 @@
                                 </select>
                             </div>
                     </div>
-                               <div class="container">
+                               <div class="container" >
+                                  <div class="row">
+                                    <div class="col-md-12">
+                                      <div id="todayPrepListCont" class="card">
+                                        <span class="card-title prepListTitle">Today's Prep List</span>
+                                        <hr>
+                                        <div class="containerPrepList">
+                                           <p class="prepTag" draggable="true">some prep here</p>
+                                           <p class="prepTag" draggable="true">some prep here</p>
+                                           <p class="prepTag" draggable="true">some prep here</p>
+
+                                        </div>
+
+                                                                           
+                                    </div>
+                                  </div>
+                                </div> 
+                                <div class="container" id="grabAPrepCont">
                                   <div class="row">
                                     <div class="col-md-12">
                                       <div id="main" class="card">
-                                        <span class="card-title prepListTitle">Today's Prep List</span>
+                                        <span class="card-title prepListTitle">Grab a prep tag.</span>
                                         <hr>
-                                        <div class="row">
-                                        
-                                          <form id="prep-form">
-                                            <div class="input-field">
-                                              <input type="text" name="prep" id="prep" class="">
-                                              <label for="prep">New prep</label>
-                                            </div>
-                                            <input type="submit" value="Add Prep" class="prepListBtn">
-                                          </form>
+                                        <div class="containerPrepList">
+                                           <p class="prepTag" draggable="true">some prep here</p>
+                                           <p class="prepTag" draggable="true">some prep here</p>
+                                           <p class="prepTag" draggable="true">some prep here</p>
+
                                         </div>
-                                      
-                                      <div class="container">
-                                      <div class="card-action">
-                                        <input type="text" name="filter" id="filter">
-                                        <label for="filter">Filter Preps</label>
-                                      </div>
-                                      <ul class="collection"></ul>
-                                      <a href="#" class="clear-preps btn black">Clear Prep List</a>
+
+                                                                           
                                     </div>
                                   </div>
-                                </div>
+                                </div> 
                     </div>
                   </div>
                     </div>
