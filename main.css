@@ -7,16 +7,55 @@ body {
     background: rgb(39, 158, 65);
     border-radius: 25px;
     margin-top: 20px;
+    margin-bottom: 20px;
     border: 1px solid;
     color: aliceblue;
     /* margin: 0; */
 }
-#puffsImg{
-    filter: opacity(75%);
+#broccoliImg{
+    /* filter: opacity(75%); */
     height: 70px;
     width: 70px;
-
+    position: relative;
+    animation-name: broccoliAnimation;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.42, 0, 0.5, 1.61);
+    animation-fill-mode: forwards;
 }
+
+#knifeImg{
+  /* filter: opacity(75%); */
+  height: 70px;
+  width: 70px;
+  position: relative;
+  animation-name: broccoliAnimation;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(0.66,-0.18, 0.49, 2);
+  animation-fill-mode: forwards;
+}
+
+#onionImg{
+  /* filter: opacity(75%); */
+  height: 70px;
+  width: 70px;
+  position: relative;
+  animation-name: broccoliAnimation;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(0.59, 0.15, 0.55, 1.46);
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes broccoliAnimation {
+    0% {left: 300px}
+    25%{left: ;}
+    50%{left: ;}
+    75%{left: ;}
+    100%{left:0 ;}
+}
+
+
+
 
 backBtn {
     
@@ -35,7 +74,10 @@ backBtn {
     /* background-color: rgb(255, 216, 216); */
     background: linear-gradient(rgb(255, 253, 255), rgb(70, 68, 68));
     border-radius: 15px;
-    margin: 15px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    filter: drop-shadow(5px 5px 5px black);
+
     /* margin: 0; */
 }
 
@@ -49,7 +91,9 @@ backBtn {
     /* margin: 20px; */
     border-radius: 10px;
     border: 2px solid rgb(235, 255, 56);
-    filter: drop-shadow(10px 10px 10px rgb(87, 87, 87));
+    filter: drop-shadow(5px 5px 5px rgb(87, 87, 87));
+    margin: 0;
+    padding: 0;
 }
 #menuLabel1, #menuLabel2 {
   color: rgb(0, 0, 0);
@@ -60,7 +104,7 @@ backBtn {
   padding: 10px;
 }
 
-.prepList {
+.prepListTitle {
 text-align: center;
 font-size: 30px;
 }

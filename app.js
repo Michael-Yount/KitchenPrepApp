@@ -19,7 +19,7 @@ const prepList = document.querySelector('.collection');
 const clearBtn = document.querySelector('.clear-preps');
 const filter = document.querySelector('#filter');
 const prepInput = document.querySelector('#prep');
-const customPrepInput = document.getElementById('#customPrepInput');
+// const customPrepAreaInput = document.getElementById('#customPrepAreaInput');
 
 //load all event listeners
 loadEventListeners();
@@ -35,35 +35,35 @@ function loadEventListeners() {
     // filter prep
     filter.addEventListener('keyup', filterPreps);
     //add custom prep area 
-    customPrepInput.addEventListener('submit', addCustomPrepArea);
+    // customPrepAreaInput.addEventListener('submit', addCustomPrepArea);
 }
 //add custom Prep Area function
-function addCustomPrepArea(e) {
-    if(prepInput.value === '') {
-        alert('Add a custom prep area');
-    }
+// function addCustomPrepArea(e) {
+//     if(customPrepAreaInput.value === '') {
+//         alert('Add a custom prep area');
+//     }
 
-    //create li element
-    const li = document.createElement('li');
-    //add class
-    li.className = 'collection-item';
-    //create text node and append li to it 
-    li.appendChild(document.createTextNode(prepInput.value));
-//create new link element
-const link = document.createElement('a');
-//Add class
-link.className = 'delete-item secondary-content';
-//add icon html
-link.innerHTML = '<i class="fa fa-remove"></i>';
-//append link to li
-li.appendChild(link);
-// append li to ul
-prepList.appendChild(li);
-//clear input
-prepInput.value = '';
+//     //create li element
+//     const li = document.createElement('li');
+//     //add class
+//     li.className = 'collection-item';
+//     //create text node and append li to it 
+//     li.appendChild(document.createTextNode(prepInput.value));
+// //create new link element
+// const link = document.createElement('a');
+// //Add class
+// link.className = 'delete-item secondary-content';
+// //add icon html
+// link.innerHTML = '<i class="fa fa-remove"></i>';
+// //append link to li
+// li.appendChild(link);
+// // append li to ul
+// prepList.appendChild(li);
+// //clear input
+// prepInput.value = '';
 
-    e.preventDefault();
-}
+//     e.preventDefault();
+// }
 //Add prep
 function addPrep(e) {
     if(prepInput.value === '') {
