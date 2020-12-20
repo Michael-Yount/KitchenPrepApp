@@ -6,6 +6,7 @@ body {
 #jumbotron {
     background: rgb(39, 158, 65);
     border-radius: 25px;
+    height: 50%;
     margin-top: 20px;
     margin-bottom: 20px;
     border: 1px solid;
@@ -119,6 +120,7 @@ font-size: 30px;
 color: rgb(19, 23, 27);
  width: 200px;
  font-size: 20px;
+ position: relative;
 
 
 }

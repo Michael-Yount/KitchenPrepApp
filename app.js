@@ -21,23 +21,37 @@ const filter = document.querySelector('#filter');
 const prepInput = document.querySelector('#prep');
 // const customPrepAreaInput = document.getElementById('#customPrepAreaInput');
 //drag n drop
-const draggables = document.querySelectorAll('.prepTag');
-const dropCntainers = document.querySelectorAll('.containerPrepList')
+// const draggables = document.querySelectorAll('.prepTag');
+// const dropContainers = document.querySelectorAll('.containerPrepList');
+const prepTags = document.getElementsByClassName('prepTag');
+
+
+
+
 //load all event listeners
 loadEventListeners();
 //load all event listeners 
 function loadEventListeners() {
+
+prepTags.addEventListener('touchStart', f) ;
     //add task event
-    form.addEventListener('submit', addPrep);
-    //remove prep event
-    prepList.addEventListener('click', removePrep); 
-    //clear task event
-    clearBtn.addEventListener('click', clearPreps);
-    // filter prep
-    filter.addEventListener('keyup', filterPreps);
-    //add custom prep area 
+    // form.addEventListener('submit', addPrep);
+    // //remove prep event
+    // prepList.addEventListener('click', removePrep); 
+    // //clear task event
+    // clearBtn.addEventListener('click', clearPreps);
+    // // filter prep
+    // filter.addEventListener('keyup', filterPreps);
+    // //add custom prep area 
     // customPrepAreaInput.addEventListener('submit', addCustomPrepArea);
+    // draggables.addEventListener('touchmove',  dragFunction)
+
+} 
+     
+function f(ev){
+    console.log(ev.touches );
 }
+
 //add custom Prep Area function
 // function addCustomPrepArea(e) {
 //     if(customPrepAreaInput.value === '') {
@@ -70,8 +84,7 @@ function addPrep(e) {
     if(prepInput.value === '') {
         alert('Add a Prep');
     }
-
-    //create li element
+ //create li element
     const li = document.createElement('li');
     //add class
     li.className = 'collection-item';
@@ -92,14 +105,12 @@ prepInput.value = '';
 
     e.preventDefault();
 }
-
 function removePrep(e) {
     if(e.target.parentElement.classList.contains('delete-item')) {
         if(confirm('Are you sure?'))
         e.target.parentElement.parentElement.remove();
     }
 }
-
 function clearPreps() {
     while(prepList.firstChild) {
         prepList.removeChild(prepList.firstChild);
