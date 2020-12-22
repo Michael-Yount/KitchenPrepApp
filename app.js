@@ -46,11 +46,6 @@ prepTags.addEventListener('touchStart', f) ;
     // customPrepAreaInput.addEventListener('submit', addCustomPrepArea);
     // draggables.addEventListener('touchmove',  dragFunction)
 
-} 
-     
-function f(ev){
-    console.log(ev.touches );
-}
 
 //add custom Prep Area function
 // function addCustomPrepArea(e) {
