@@ -1,13 +1,11 @@
+const prepTags = document.querySelectorAll('.prepTag')
+const prepLists = document.querySelectorAll('.containerPrepList')
 
-
-
-
-
-//load all event listeners
-loadEventListeners();
-//load all event listeners 
-function loadEventListeners() {
-
-prepTags.addEventListener('touchStart', ()=> {
-    console.log('touch')
-}) }
+prepTags.forEach(prepTag => {
+   prepTag.addEventListener('touchmove', (ev) => {
+    //    console.log('touch')
+    var touchLocation = ev.targetTouches[0];
+    prepTag.style.left = touchLocation.pageX + 'px'
+    prepTag.style.left = touchLocation.pagey + 'px'
+   })
+})
