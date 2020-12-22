@@ -7,5 +7,5 @@ prepTags.forEach(prepTag => {
     var touchLocation = ev.targetTouches[0];
     prepTag.style.left = touchLocation.pageX + 'px'
     prepTag.style.left = touchLocation.pagey + 'px'
-   })
+   }{capture: false})
 })
