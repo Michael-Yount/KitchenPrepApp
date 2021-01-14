@@ -1,16 +1,30 @@
-body {
-  background-color: #5d898b;
-  /* margin: 0; */ }
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
 
-#jumbotron {
-  background: #279e41;
-  border-radius: 25px;
-  height: 50%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border: 1px solid;
-  color: aliceblue;
-  /* margin: 0; */ }
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  background: linear-gradient(rgba(44, 124, 44, 0.5), rgba(93, 137, 139, 0.911));
+  font-weight: 400;
+  line-height: 1rem; }
+
+@keyframes broccoliAnimation {
+  0% {
+    left: 300px; }
+  25% {
+    left: 0; }
+  50% {
+    left: 0; }
+  75% {
+    left: 0; }
+  100% {
+    left: 0; } }
 
 #broccoliImg {
   /* filter: opacity(75%); */
@@ -41,18 +55,6 @@ body {
   animation-duration: 2s;
   animation-timing-function: cubic-bezier(0.59, 0.15, 0.55, 1.46);
   animation-fill-mode: forwards; }
-
-@keyframes broccoliAnimation {
-  0% {
-    left: 300px; }
-  25% {
-    left: 0; }
-  50% {
-    left: 0; }
-  75% {
-    left: 0; }
-  100% {
-    left: 0; } }
 
 .appTitle {
   font-family: "Spectral", serif;

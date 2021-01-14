@@ -1,18 +1,35 @@
-body {
-  background-color: rgb(93, 137, 139);
-  /* margin: 0; */
-}
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/function";
 
-#jumbotron {
-  background: rgb(39, 158, 65);
-  border-radius: 25px;
-  height: 50%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border: 1px solid;
-  color: aliceblue;
-  /* margin: 0; */
-}
+@import "pages/home";
+
+@import "base/base";
+@import "base/animations";
+@import "base/typography";
+@import "base/utilities";
+
+@import "layout/header";
+@import "layout/grid";
+@import "layout/footer";
+
+// @import "components";
+
+// body {
+//   background-color: rgb(93, 137, 139);
+//   /* margin: 0; */
+// }
+
+// #jumbotron {
+//   background: rgb(39, 158, 65);
+//   border-radius: 25px;
+//   height: 50%;
+//   margin-top: 20px;
+//   margin-bottom: 20px;
+//   border: 1px solid;
+//   color: aliceblue;
+//   /* margin: 0; */
+// }
 #broccoliImg {
   /* filter: opacity(75%); */
   height: 70px;
@@ -46,23 +63,23 @@ body {
   animation-fill-mode: forwards;
 }
 
-@keyframes broccoliAnimation {
-  0% {
-    left: 300px;
-  }
-  25% {
-    left: 0;
-  }
-  50% {
-    left: 0;
-  }
-  75% {
-    left: 0;
-  }
-  100% {
-    left: 0;
-  }
-}
+// @keyframes broccoliAnimation {
+//   0% {
+//     left: 300px;
+//   }
+//   25% {
+//     left: 0;
+//   }
+//   50% {
+//     left: 0;
+//   }
+//   75% {
+//     left: 0;
+//   }
+//   100% {
+//     left: 0;
+//   }
+// }
 
 backBtn {
 }
