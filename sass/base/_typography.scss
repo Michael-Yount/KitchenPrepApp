@@ -1,0 +1,24 @@
+body {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: $default-font-size;
+  line-height: 1.7;
+  background-color: $color-background-main;
+  padding: 2rem;
+}
+.heading-primary {
+  display: inline-block;
+  // background-image:;
+  color: $text-color-main;
+  text-transform: uppercase;
+  text-shadow: $text-shadow-dark;
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
+  -webkit-background-clip: text;
+  letter-spacing: 0.5rem;
+
+  &--main {
+    display: block;
+    font-size: 8rem;
+  }
+}

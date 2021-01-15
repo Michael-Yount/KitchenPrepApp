@@ -1,17 +1,16 @@
 .header {
-  height: 95vh;
+  height: 65vh;
   background-image: linear-gradient(
     to right bottom,
-    $color-primary,
-    $color-secondary
+    $color-secondary,
+    $color-primary
   );
   background-size: cover;
   background-position: top;
   position: relative;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-  padding: 25rem;
-  box-shadow: 1rem 1rem 5rem black;
+  clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
+  padding: 20rem;
 
   &__logo-box {
     position: absolute;
@@ -30,4 +29,6 @@
     transform: translate(-50%, -50%);
     text-align: center;
   }
+
+  
 }
