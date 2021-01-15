@@ -6,6 +6,8 @@
     position: relative;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    padding: 25rem;
+    box-shadow: 1rem 1rem 5rem black;
 
     &__logo-box {
         position: absolute;
