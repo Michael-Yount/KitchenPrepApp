@@ -1,6 +1,8 @@
 .section-start {
   background-color: rgba(55, 129, 133, 0.911);
-  padding: 20rem; }
+  padding: 20rem;
+  margin-top: -1vh;
+  border-radius: 1rem; }
 
 *,
 *::after,
@@ -47,7 +49,7 @@ body {
   letter-spacing: 0.5rem; }
   .heading-primary--main {
     display: block;
-    font-size: 8rem; }
+    font-size: 6rem; }
 
 .u-center-text {
   text-align: center !important; }
@@ -75,7 +77,8 @@ body {
   position: relative;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
   clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
-  padding: 20rem; }
+  padding: 20rem;
+  border-radius: 1rem; }
   .header__logo-box {
     position: absolute;
     top: 4rem;
