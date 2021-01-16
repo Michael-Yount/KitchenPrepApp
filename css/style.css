@@ -17,7 +17,8 @@ body {
 
 @keyframes broccoliAnimation {
   0% {
-    left: 300px; }
+    left: 500px;
+    opacity: 25%; }
   25% {
     left: 0; }
   50% {
@@ -90,11 +91,30 @@ body {
 
 .icon {
   position: relative;
-  display: block; }
+  display: block;
+  bottom: 15rem;
+  left: 5rem; }
   .icon__broccoli {
     top: 2rem;
     width: 10%;
+    position: relative;
     animation-name: broccoliAnimation;
-    animation-duration: 2s;
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(0.42, 0, 0.5, 1.61);
+    animation-fill-mode: forwards; }
+  .icon__knife {
+    top: 2rem;
+    width: 10%;
+    position: relative;
+    animation-name: broccoliAnimation;
+    animation-duration: 6s;
+    animation-timing-function: cubic-bezier(0.42, 0, 0.5, 1.61);
+    animation-fill-mode: forwards; }
+  .icon__onion {
+    top: 2rem;
+    width: 10%;
+    position: relative;
+    animation-name: broccoliAnimation;
+    animation-duration: 7s;
     animation-timing-function: cubic-bezier(0.42, 0, 0.5, 1.61);
     animation-fill-mode: forwards; }
