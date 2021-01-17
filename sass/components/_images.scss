@@ -1,13 +1,25 @@
 .icon {
-  position: relative;
+  position: absolute;
   display: block;
-  // width: 50%;
-  // height: 50%;
+  width: 50%;
+  height: 50%;
   bottom: 15rem;
-  left: 5rem;
+  left: 20rem;
 
   &__broccoli {
     top: 2rem;
+    // left: 2rem;
+    width: 10%;
+    position: relative;
+    animation-name: broccoliAnimation;
+    animation-duration: 4s;
+    animation-timing-function: cubic-bezier(0.42, 0, 0.5, 1.61);
+    animation-fill-mode: forwards;
+  }
+
+  &__knife {
+    top: 7rem;
+
     // left: 2rem;
     width: 10%;
     position: relative;
@@ -17,19 +29,8 @@
     animation-fill-mode: forwards;
   }
 
-  &__knife {
-    top: 2rem;
-    // left: 2rem;
-    width: 10%;
-    position: relative;
-    animation-name: broccoliAnimation;
-    animation-duration: 6s;
-    animation-timing-function: cubic-bezier(0.42, 0, 0.5, 1.61);
-    animation-fill-mode: forwards;
-  }
-
   &__onion {
-    top: 2rem;
+    top: 12rem;
     // left: 2rem;
     width: 10%;
     position: relative;

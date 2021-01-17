@@ -70,13 +70,13 @@ body {
   margin-top: 10rem !important; }
 
 .header {
-  height: 65vh;
+  height: 45vh;
   background-image: linear-gradient(to right bottom, #27424b, #c9f1d0);
   background-size: cover;
   background-position: top;
   position: relative;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-  clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
   padding: 20rem;
   border-radius: 1rem; }
   .header__logo-box {
@@ -92,29 +92,90 @@ body {
     transform: translate(-50%, -50%);
     text-align: center; }
 
+.daily-prep-list__checkbox {
+  display: none; }
+
+.daily-prep-list__button {
+  background-color: white;
+  height: 7rem;
+  width: 7rem;
+  position: fixed;
+  top: 6rem;
+  right: 6rem;
+  border-radius: 50%;
+  z-index: 2000; }
+
+.daily-prep-list__background {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 6.5rem;
+  right: 6.5rem;
+  background-image: radial-gradient(#a1b6b8, rgba(55, 129, 133, 0.911));
+  z-index: 1000;
+  transform: scale(80); }
+
+.daily-prep-list__nav {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1500; }
+
+.daily-prep-list__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none; }
+
+.daily-prep-list__link:link, .daily-prep-list__link:visited {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 300;
+  padding: 1rem;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%);
+  background-size: 230%;
+  transition: all 0.4s; }
+  .daily-prep-list__link:link span, .daily-prep-list__link:visited span {
+    margin-right: 1.5rem;
+    display: inline-block; }
+
+.daily-prep-list__link:hover, .daily-prep-list__link:active {
+  background-position: 100%;
+  color: #5f5f5f;
+  transform: translateX(1rem); }
+
 .icon {
-  position: relative;
+  position: absolute;
   display: block;
+  width: 50%;
+  height: 50%;
   bottom: 15rem;
-  left: 5rem; }
+  left: 20rem; }
   .icon__broccoli {
     top: 2rem;
+    width: 10%;
+    position: relative;
+    animation-name: broccoliAnimation;
+    animation-duration: 4s;
+    animation-timing-function: cubic-bezier(0.42, 0, 0.5, 1.61);
+    animation-fill-mode: forwards; }
+  .icon__knife {
+    top: 7rem;
     width: 10%;
     position: relative;
     animation-name: broccoliAnimation;
     animation-duration: 5s;
     animation-timing-function: cubic-bezier(0.42, 0, 0.5, 1.61);
     animation-fill-mode: forwards; }
-  .icon__knife {
-    top: 2rem;
-    width: 10%;
-    position: relative;
-    animation-name: broccoliAnimation;
-    animation-duration: 6s;
-    animation-timing-function: cubic-bezier(0.42, 0, 0.5, 1.61);
-    animation-fill-mode: forwards; }
   .icon__onion {
-    top: 2rem;
+    top: 12rem;
     width: 10%;
     position: relative;
     animation-name: broccoliAnimation;

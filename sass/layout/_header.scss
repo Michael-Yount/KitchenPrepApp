@@ -1,5 +1,5 @@
 .header {
-  height: 65vh;
+  height: 45vh;
   background-image: linear-gradient(
     to right bottom,
     $color-secondary,
@@ -8,8 +8,8 @@
   background-size: cover;
   background-position: top;
   position: relative;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-  clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
   padding: 20rem;
   border-radius: 1rem;
 
