@@ -103,7 +103,8 @@ body {
   top: 6rem;
   right: 6rem;
   border-radius: 50%;
-  z-index: 2000; }
+  z-index: 2000;
+  box-shadow: 0.5rem 0.5rem 2rem #1b1b1b; }
 
 .daily-prep-list__background {
   height: 6rem;
@@ -114,7 +115,7 @@ body {
   right: 6.5rem;
   background-image: radial-gradient(#6b8486, rgba(15, 114, 119, 0.966));
   z-index: 1000;
-  transform: scale(80); }
+  transition: transform 0.5s; }
 
 .daily-prep-list__nav {
   height: 100vh;
@@ -122,14 +123,18 @@ body {
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 1500; }
+  z-index: 1500;
+  opacity: 0;
+  width: 0;
+  transition: all 0.5s; }
 
 .daily-prep-list__list {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  list-style: none; }
+  list-style: none;
+  width: 20%; }
 
 .daily-prep-list__link:link, .daily-prep-list__link:visited {
   text-shadow: 0.3rem 0.3rem 0.45rem #181616;
@@ -151,6 +156,13 @@ body {
   background-position: 100%;
   color: black;
   transform: translateX(1rem); }
+
+.daily-prep-list__checkbox:checked ~ .daily-prep-list__background {
+  transform: scale(80); }
+
+.daily-prep-list__checkbox:checked ~ .daily-prep-list__nav {
+  opacity: 1;
+  width: 100%; }
 
 .icon {
   position: absolute;
