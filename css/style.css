@@ -35,7 +35,7 @@ body {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.7;
-  background-color: #6b8486;
+  background-color: rgba(192, 224, 250, 0.911);
   padding: 2rem; }
 
 .heading-primary {
@@ -104,7 +104,9 @@ body {
   right: 6rem;
   border-radius: 50%;
   z-index: 2000;
-  box-shadow: 0.5rem 0.5rem 2rem #1b1b1b; }
+  box-shadow: 0.5rem 0.5rem 2rem #1b1b1b;
+  text-align: center;
+  cursor: pointer; }
 
 .daily-prep-list__background {
   height: 6rem;
@@ -164,6 +166,41 @@ body {
   opacity: 1;
   width: 100%; }
 
+.daily-prep-list__icon {
+  position: relative;
+  margin-top: 3.5rem; }
+  .daily-prep-list__icon, .daily-prep-list__icon::before, .daily-prep-list__icon::after {
+    width: 3rem;
+    height: 2px;
+    background-color: #5f5f5f;
+    display: inline-block; }
+  .daily-prep-list__icon::before, .daily-prep-list__icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all 0.6s; }
+  .daily-prep-list__icon::before {
+    top: -0.8rem; }
+  .daily-prep-list__icon::after {
+    top: 0.8rem; }
+
+.daily-prep-list__button:hover .daily-prep-list__icon::before {
+  top: -1rem; }
+
+.daily-prep-list__button:hover .daily-prep-list__icon::after {
+  top: 1rem; }
+
+.daily-prep-list__checkbox:checked + .daily-prep-list__button .daily-prep-list__icon {
+  background-color: transparent; }
+
+.daily-prep-list__checkbox:checked + .daily-prep-list__button .daily-prep-list__icon::before {
+  top: 0;
+  transform: rotate(135deg); }
+
+.daily-prep-list__checkbox:checked + .daily-prep-list__button .daily-prep-list__icon::after {
+  top: 0;
+  transform: rotate(-135deg); }
+
 .icon {
   position: absolute;
   display: block;
@@ -174,6 +211,7 @@ body {
   .icon__broccoli {
     top: 2rem;
     width: 10%;
+    padding: 2rem;
     position: relative;
     animation-name: broccoliAnimation;
     animation-duration: 4s;
@@ -182,6 +220,7 @@ body {
   .icon__knife {
     top: 7rem;
     width: 10%;
+    padding: 2rem;
     position: relative;
     animation-name: broccoliAnimation;
     animation-duration: 5s;
@@ -190,6 +229,7 @@ body {
   .icon__onion {
     top: 12rem;
     width: 10%;
+    padding: 2rem;
     position: relative;
     animation-name: broccoliAnimation;
     animation-duration: 7s;
