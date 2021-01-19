@@ -3,7 +3,7 @@ body {
   font-weight: 400;
   font-size: $default-font-size;
   line-height: 1.7;
-  background-color: $color-background-tertiary;
+  background-color: $color-background-bright;
   padding: 2rem;
 }
 .heading-primary {
@@ -13,12 +13,12 @@ body {
   text-transform: uppercase;
   text-shadow: $text-shadow-dark;
   backface-visibility: hidden;
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
   -webkit-background-clip: text;
   letter-spacing: 0.5rem;
 
   &--main {
     display: block;
-    font-size: 6rem;
+    font-size: 5rem;
   }
 }
