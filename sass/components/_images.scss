@@ -3,11 +3,12 @@
   display: block;
   width: 50%;
   height: 50%;
-  bottom: 15rem;
-  left: 20rem;
+  bottom: 12rem;
+  left: 40rem;
 
   &__broccoli {
     top: 2rem;
+    // left: 2rem;
     // left: 2rem;
     width: 10%;
     padding: 2rem;
@@ -22,9 +23,9 @@
   &__knife {
     top: 7rem;
 
-    // left: 2rem;
+    left: 2rem;
     width: 10%;
-  padding: 2rem;
+    padding: 2rem;
 
     position: relative;
     animation-name: broccoliAnimation;
@@ -37,7 +38,7 @@
     top: 12rem;
     // left: 2rem;
     width: 10%;
-  padding: 2rem;
+    padding: 2rem;
 
     position: relative;
     animation-name: broccoliAnimation;
