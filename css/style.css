@@ -4,18 +4,6 @@
   padding: 20rem;
   margin-top: -1vh;
   border-radius: 1rem; }
-  .section-start__list {
-    display: inline-block;
-    list-style: none;
-    position: absolute; }
-    .section-start__list--item {
-      padding: 1.5rem;
-      border-radius: 5rem;
-      font-size: 3rem;
-      background-image: linear-gradient(to top right, rgba(15, 114, 119, 0.966), #6b8486); }
-  .section-start--link {
-    text-decoration: none;
-    color: #c9f1d0; }
 
 *,
 *::after,
@@ -99,7 +87,7 @@ body {
     top: 4rem;
     left: 4rem; }
   .header__logo {
-    height: 10rem; }
+    height: 8rem; }
   .header__text--box {
     position: absolute;
     top: 50%;
@@ -122,6 +110,17 @@ body {
   box-shadow: 0.5rem 0.5rem 2rem #1b1b1b;
   text-align: center;
   cursor: pointer; }
+  .daily-prep-list__button--label {
+    right: -1rem;
+    letter-spacing: .5rem;
+    text-transform: uppercase;
+    top: -5rem;
+    position: absolute;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+    background-image: linear-gradient(to top, rgba(95, 179, 218, 0.383), rgba(255, 234, 43, 0.246));
+    border-radius: 3rem; }
 
 .daily-prep-list__background {
   height: 6rem;
@@ -224,28 +223,28 @@ body {
   bottom: 12rem;
   left: 40rem; }
   .icon__broccoli {
-    top: 2rem;
+    top: 1rem;
     width: 10%;
-    padding: 2rem;
+    padding: 1rem;
     position: relative;
     animation-name: broccoliAnimation;
     animation-duration: 4s;
     animation-timing-function: cubic-bezier(0.42, 0, 0.5, 1.61);
     animation-fill-mode: forwards; }
   .icon__knife {
-    top: 7rem;
+    top: 8rem;
     left: 2rem;
     width: 10%;
-    padding: 2rem;
+    padding: 1rem;
     position: relative;
     animation-name: broccoliAnimation;
     animation-duration: 5s;
     animation-timing-function: cubic-bezier(0.42, 0, 0.5, 1.61);
     animation-fill-mode: forwards; }
   .icon__onion {
-    top: 12rem;
+    top: 14rem;
     width: 10%;
-    padding: 2rem;
+    padding: 1rem;
     position: relative;
     animation-name: broccoliAnimation;
     animation-duration: 7s;
