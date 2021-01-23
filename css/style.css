@@ -1,8 +1,21 @@
 .section-start {
+  position: relative;
   background-color: #27424b;
   padding: 20rem;
   margin-top: -1vh;
   border-radius: 1rem; }
+  .section-start__list {
+    display: inline-block;
+    list-style: none;
+    position: absolute; }
+    .section-start__list--item {
+      padding: 1.5rem;
+      border-radius: 5rem;
+      font-size: 3rem;
+      background-image: linear-gradient(to top right, rgba(15, 114, 119, 0.966), #6b8486); }
+  .section-start--link {
+    text-decoration: none;
+    color: #c9f1d0; }
 
 *,
 *::after,

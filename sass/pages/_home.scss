@@ -1,6 +1,32 @@
 .section-start {
+  position: relative;
   background-color: $color-secondary;
   padding: 20rem;
   margin-top: -1vh;
   border-radius: 1rem;
+
+  &__nav {
+  }
+
+  &__list {
+    display: inline-block;
+    list-style: none;
+    position: absolute;
+
+    &--item {
+      padding: 1.5rem;
+      border-radius: 5rem;
+      font-size: 3rem;
+      background-image: linear-gradient(
+        to top right,
+        $color-background-secondary,
+        $color-background-main
+      );
+    }
+  }
+
+  &--link {
+    text-decoration: none;
+    color: $color-primary;
+  }
 }
