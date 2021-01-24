@@ -2,9 +2,9 @@ body {
   font-family: "Quicksand", sans-serif;
   font-weight: 400;
   font-size: $default-font-size;
-  line-height: 1.7;
+  line-height: 1.7rem;
   background-color: $color-background-bright;
-  padding: 2rem;
+  padding: 1rem;
 }
 .heading-primary {
   display: inline-block;
@@ -15,11 +15,12 @@ body {
   backface-visibility: hidden;
   margin-bottom: 4rem;
   -webkit-background-clip: text;
-  letter-spacing: 0.5rem;
+  letter-spacing: 1.5rem;
+  line-height: 8rem;
 
   &--main {
     display: block;
-    font-size: 5rem;
+    font-size: 7rem;
   }
 
   &--sub {

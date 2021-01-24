@@ -1,7 +1,8 @@
 .section-start {
   position: relative;
+  display: 25vh;
   background-color: #27424b;
-  padding: 20rem;
+  padding: 5rem;
   margin-top: -1vh;
   border-radius: 1rem; }
 
@@ -35,9 +36,9 @@ body {
   font-family: "Quicksand", sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
-  line-height: 1.7;
-  background-color: #e7f6f6;
-  padding: 2rem; }
+  line-height: 1.7rem;
+  background-color: #fff1db;
+  padding: 1rem; }
 
 .heading-primary {
   display: inline-block;
@@ -47,10 +48,11 @@ body {
   backface-visibility: hidden;
   margin-bottom: 4rem;
   -webkit-background-clip: text;
-  letter-spacing: 0.5rem; }
+  letter-spacing: 1.5rem;
+  line-height: 8rem; }
   .heading-primary--main {
     display: block;
-    font-size: 5rem; }
+    font-size: 7rem; }
   .heading-primary--sub {
     display: block; }
 
@@ -73,7 +75,7 @@ body {
   margin-top: 10rem !important; }
 
 .header {
-  height: 45vh;
+  height: 55vh;
   background-image: linear-gradient(to right bottom, #27424b, #c9f1d0);
   background-size: cover;
   background-position: top;
@@ -110,17 +112,19 @@ body {
   box-shadow: 0.5rem 0.5rem 2rem #1b1b1b;
   text-align: center;
   cursor: pointer; }
-  .daily-prep-list__button--label {
-    right: -1rem;
-    letter-spacing: .5rem;
-    text-transform: uppercase;
-    top: -5rem;
-    position: absolute;
-    font-size: 2rem;
-    text-align: center;
-    padding: 1rem;
-    background-image: linear-gradient(to top, rgba(95, 179, 218, 0.383), rgba(255, 234, 43, 0.246));
-    border-radius: 3rem; }
+
+.daily-prep-list__button--label {
+  position: fixed;
+  padding: 1rem;
+  text-transform: uppercase;
+  color: black;
+  z-index: 1000;
+  top: 2.5rem;
+  right: 2.5rem;
+  letter-spacing: 0.5rem;
+  background-image: linear-gradient(to bottom, rgba(95, 179, 218, 0.383), rgba(255, 234, 43, 0.246));
+  border-radius: 3rem;
+  box-shadow: 0.5rem 0.5rem 2rem #1b1b1b; }
 
 .daily-prep-list__background {
   height: 6rem;
@@ -216,36 +220,38 @@ body {
   transform: rotate(-135deg); }
 
 .icon {
-  position: absolute;
+  position: relative;
   display: block;
   width: 50%;
   height: 50%;
-  bottom: 12rem;
-  left: 40rem; }
+  left: 30rem;
+  top: 10rem;
+  z-index: 500; }
   .icon__broccoli {
     top: 1rem;
+    display: block;
     width: 10%;
-    padding: 1rem;
-    position: relative;
+    padding: 1.2rem;
+    position: absolute;
     animation-name: broccoliAnimation;
     animation-duration: 4s;
     animation-timing-function: cubic-bezier(0.42, 0, 0.5, 1.61);
     animation-fill-mode: forwards; }
   .icon__knife {
-    top: 8rem;
-    left: 2rem;
+    top: 9rem;
     width: 10%;
-    padding: 1rem;
-    position: relative;
+    padding: 1.2rem;
+    position: absolute;
     animation-name: broccoliAnimation;
     animation-duration: 5s;
     animation-timing-function: cubic-bezier(0.42, 0, 0.5, 1.61);
     animation-fill-mode: forwards; }
   .icon__onion {
-    top: 14rem;
+    top: 15rem;
+    left: 2rem;
     width: 10%;
-    padding: 1rem;
-    position: relative;
+    padding: 1.2rem;
+    position: absolute;
     animation-name: broccoliAnimation;
     animation-duration: 7s;
     animation-timing-function: cubic-bezier(0.42, 0, 0.5, 1.61);

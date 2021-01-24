@@ -1,8 +1,6 @@
 .daily-prep-list {
   // top: 0;
 
-  
-
   &__checkbox {
     display: none;
   }
@@ -19,27 +17,24 @@
     box-shadow: $box-shadow-dark;
     text-align: center;
     cursor: pointer;
-
-    &--label {
-    right: -1rem;
-    // position: absolute;
-    letter-spacing:.5rem;
-    text-transform: uppercase;
-    top: -5rem;
-    position: absolute;
-    font-size: 2rem;
-    text-align: center;
-    // display: block;
+  }
+  &__button--label {
+    position: fixed;
     padding: 1rem;
+    text-transform: uppercase;
+    color: $color-black;
+    z-index: 1000;
+    top: 2.5rem;
+    right: 2.5rem;
+    letter-spacing: 0.5rem;
     background-image: linear-gradient(
-      to top,
+      to bottom,
       $transparent-blue-glass,
       $transparent-gold-glass
     );
 
-
     border-radius: 3rem;
-  }
+    box-shadow: $box-shadow-dark;
   }
 
   &__background {
