@@ -27,3 +27,12 @@ body {
     display: block;
   }
 }
+
+.heading-secondary {
+  display: inline-block;
+  color: $color-secondary;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  -webkit-background-clip: text;
+  letter-spacing: 1rem;
+}

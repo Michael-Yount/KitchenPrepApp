@@ -1,0 +1,27 @@
+.section-start {
+  // position: fixed;
+  //top;
+
+  &__nav {
+    width: 100%;
+    top: 2rem;
+    text-align: center;
+    // position: absolute;
+  }
+
+  &__list {
+    width: 100%;
+    text-align: center;
+    // display: inline-block;
+  }
+
+  &--link {
+    &:link,
+    &:visited {
+      padding: 3rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      display: inline-block;
+    }
+  }
+}

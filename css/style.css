@@ -1,10 +1,8 @@
 .section-start {
   position: relative;
-  display: 25vh;
-  background-color: #27424b;
-  padding: 5rem;
-  margin-top: -1vh;
-  border-radius: 1rem; }
+  background-color: rgba(95, 179, 218, 0.383);
+  border-radius: 1rem;
+  padding: 1rem; }
 
 *,
 *::after,
@@ -55,6 +53,14 @@ body {
     font-size: 7rem; }
   .heading-primary--sub {
     display: block; }
+
+.heading-secondary {
+  display: inline-block;
+  color: #27424b;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  -webkit-background-clip: text;
+  letter-spacing: 1rem; }
 
 .u-center-text {
   text-align: center !important; }
@@ -218,6 +224,21 @@ body {
 .daily-prep-list__checkbox:checked + .daily-prep-list__button .daily-prep-list__icon::after {
   top: 0;
   transform: rotate(-135deg); }
+
+.section-start__nav {
+  width: 100%;
+  top: 2rem;
+  text-align: center; }
+
+.section-start__list {
+  width: 100%;
+  text-align: center; }
+
+.section-start--link:link, .section-start--link:visited {
+  padding: 3rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block; }
 
 .icon {
   position: relative;
