@@ -2,8 +2,7 @@
   position: relative;
   background-color: rgba(95, 179, 218, 0.383);
   border-radius: 1rem;
-  padding: 5rem;
-  margin: 0rem; }
+  padding: 5rem; }
 
 *,
 *::after,
@@ -238,12 +237,14 @@ body {
 .section-start--link:link, .section-start--link:visited {
   margin-left: 3rem;
   padding: 2rem;
+  font-size: 3rem;
   text-decoration: none;
   color: #1f1f1f;
   text-transform: uppercase;
   display: inline-block;
   border-radius: 15rem;
-  background-image: linear-gradient(to bottom, rgba(228, 247, 255, 0.383), rgba(255, 249, 249, 0.596)); }
+  background-image: linear-gradient(to bottom, rgba(228, 247, 255, 0.383), rgba(255, 249, 249, 0.596));
+  box-shadow: 0.5rem 0.5rem 2rem #c0aeae; }
 
 .icon {
   position: relative;
