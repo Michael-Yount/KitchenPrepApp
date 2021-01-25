@@ -29,7 +29,8 @@ body {
 }
 
 .heading-secondary {
-  display: inline-block;
+  // display: inline-block;
+  padding: 3rem;
   color: $color-secondary;
   text-transform: uppercase;
   backface-visibility: hidden;
