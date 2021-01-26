@@ -1,0 +1,45 @@
+.modal {
+  //   @include centeredContainer;
+  @include glassFade;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  position: fixed;
+  border-bottom: 3px solid white;
+  border-radius: 5px;
+  z-index: 3000;
+  width: 700px;
+  max-width: 80%;
+
+  .modal.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  &__header {
+    // text-align: center;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $color-white;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  &__close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 3rem;
+  }
+
+  &__body {
+    padding: 10px 15px;
+  }
+}

@@ -34,29 +34,19 @@
       <nav class="daily-prep-list__nav">
         <ul class="daily-prep-list__list">
           <li class="daily-prep-list__item">
-            <a href="#" class="daily-prep-list__link"
-              ><span>01</span>Customize List</a
-            >
+            <a href="#" class="daily-prep-list__link">Customize List</a>
           </li>
           <li class="daily-prep-list__item">
-            <a href="#" class="daily-prep-list__link"
-              ><span>02</span>Cold prep</a
-            >
+            <a href="#" class="daily-prep-list__link">Cold prep</a>
           </li>
           <li class="daily-prep-list__item">
-            <a href="#" class="daily-prep-list__link"
-              ><span>03</span>Line Prep List</a
-            >
+            <a href="#" class="daily-prep-list__link">Line Prep List</a>
           </li>
           <li class="daily-prep-list__item">
-            <a href="#" class="daily-prep-list__link"
-              ><span>04</span>Banquet Prep List</a
-            >
+            <a href="#" class="daily-prep-list__link">Banquet Prep List</a>
           </li>
           <li class="daily-prep-list__item">
-            <a href="#" class="daily-prep-list__link"
-              ><span>05</span>Bakery Prep List</a
-            >
+            <a href="#" class="daily-prep-list__link">Bakery Prep List</a>
           </li>
         </ul>
       </nav>
@@ -98,13 +88,64 @@
 
     <section class="section-start">
       <nav class="section-start__nav">
-        <a href="#" class="section-start--link">Recipe Book</a>
+        <!-- <a href="#" class="section-start--link">Recipe Book</a>
         <a href="#" class="section-start--link">Conversions</a>
         <a href="#" class="section-start--link">Food Safety</a>
-        <a href="#" class="section-start--link">Quick Notes</a>
-        <a href="#" class="section-start--link">Food Cost</a>
-        <a href="#" class="section-start--link">Labor Cost</a>
+        <a href="#" class="section-start--link">Quick Notes</a> -->
+        <a
+          data-modal-target="#modal"
+          href="#"
+          class="section-start-button btn btn--animated btn--glass"
+        >
+          Food Cost
+        </a>
+        <a
+          data-modal-target="#modal"
+          href="#"
+          class="section-start-button btn btn--animated btn--glass"
+        >
+          labor cost
+        </a>
+        <a
+          data-modal-target="#modal"
+          href="#"
+          class="section-start-button btn btn--animated btn--glass"
+        >
+          Food Safety
+        </a>
+        <a
+          data-modal-target="#modal"
+          href="#"
+          class="section-start-button btn btn--animated btn--glass"
+        >
+          Recipes
+        </a>
+        <a
+          data-modal-target="#modal"
+          href="#"
+          class="section-start-button btn btn--glass btn--animated"
+        >
+          conversions
+        </a>
+        <!-- <a href="#" class="section-start--link">Labor Cost</a> -->
       </nav>
+
+      <div class="modal" id="modal">
+        <div class="modal__header">
+          <div class="modal__title">Food cost Calculator</div>
+          <button data-close-button class="modal__close-button">&times;</button>
+        </div>
+        <div class="modal__body">
+          This is where I will put the functionality for the food cost
+          calculator. I will put labels, buttons, and forms to do the math for
+          food cost analysis. The more text That I put in here the larger that
+          my modal will become. This is of great benefit because, I can practice
+          my typing as well.
+        </div>
+      </div>
+
+      <div class="overlay" id="overlay"></div>
+
       <div class="section-start__heading u-center-text">
         <h2 class="heading-secondary u-margin-bottom-big">
           These are the quick list properties
@@ -112,14 +153,11 @@
       </div>
     </section>
 
-
-<footer class="footer">
-  <div class="footer__logo">
-    FOOTER LOGO
-  </div>
-</footer>
-<!-- this is the grid section -->
-        <!-- <section class="grid-test"> -->
+    <footer class="footer">
+      <div class="footer__logo">FOOTER LOGO</div>
+    </footer>
+    <!-- this is the grid section -->
+    <!-- <section class="grid-test"> -->
     <script src="/app.js"></script>
   </body>
 </html>

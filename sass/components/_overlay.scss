@@ -1,0 +1,22 @@
+#overlay {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 200ms ease-in-out;
+
+  background-image: linear-gradient(
+    to bottom,
+    $tinted-glass-smokey,
+    $tinted-glass-white
+  );
+  z-index: 2000;
+  pointer-events: none;
+
+  &:active {
+    opacity: 1;
+    pointer-events: all;
+  }
+}

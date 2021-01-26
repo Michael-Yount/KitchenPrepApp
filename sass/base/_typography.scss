@@ -19,20 +19,21 @@ body {
 
   &--main {
     display: block;
-    font-size: 7rem;
+    font-size: 6rem;
 
     @include respond(phone) {
       letter-spacing: 1rem;
-      font-size: 5rem;
+      font-size: 3rem;
     }
   }
 
   &--sub {
     display: block;
+    font-size: 2rem;
 
     @include respond(phone) {
       letter-spacing: 0.5rem;
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
   }
 }
