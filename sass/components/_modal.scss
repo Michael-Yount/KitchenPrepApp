@@ -12,7 +12,7 @@
   width: 700px;
   max-width: 80%;
 
-  .modal.active {
+  &.active {
     transform: translate(-50%, -50%) scale(1);
   }
 
@@ -41,5 +41,8 @@
 
   &__body {
     padding: 10px 15px;
+    line-height: 4rem;
+    letter-spacing: .1rem;
+    font-size: 2rem;
   }
 }

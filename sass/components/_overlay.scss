@@ -15,7 +15,7 @@
   z-index: 2000;
   pointer-events: none;
 
-  &:active {
+  &.active {
     opacity: 1;
     pointer-events: all;
   }
