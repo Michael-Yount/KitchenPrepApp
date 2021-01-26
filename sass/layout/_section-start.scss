@@ -24,15 +24,17 @@
     &:link,
     &:visited {
         // top: 50rem;
-        margin-left: 3rem;
+        // margin-left: 3rem;
       padding: 2rem;
-      font-size: 3rem;
+      margin: 2rem;
+      font-size: 2rem;
       text-decoration: none;
       color: $button-text-color-dark;
 
       text-transform: uppercase;
       display: inline-block;
       border-radius: 15rem;
+      border-bottom: 2px solid $color-white;
 
       background-image: linear-gradient(
       to bottom,
@@ -43,7 +45,8 @@
     box-shadow: $box-shadow-light;
 
      @include respond(phone){
-      margin-bottom: 2rem;
+      margin: 1rem;
+      // transform: translateY(-1);
     }
     }
   }

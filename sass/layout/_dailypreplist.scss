@@ -17,12 +17,17 @@
     box-shadow: $box-shadow-dark;
     text-align: center;
     cursor: pointer;
+
+     @include respond(tab-port) {
+        top: 2rem;
+        right: 6rem;
+      }
   }
   &__button--label {
     position: fixed;
     padding: 1rem;
     text-transform: uppercase;
-    color: $color-white;
+    color: $color-black;
     z-index: 1000;
     top: 2.5rem;
     right: 2.5rem;
@@ -35,13 +40,16 @@
 
     border-radius: 3rem;
     box-shadow: $box-shadow-dark;
+    border-bottom: 2px solid $color-white;
 
     @include respond(phone) {
-    letter-spacing: none;
-    font-size: 1.2rem;
-    right: 5rem;
-    box-shadow: none;
-    
+      display: none;
+      // letter-spacing: none;
+      // font-size: 1.2rem;
+      // right: 7rem;
+      // top: 2rem;
+      // box-shadow: none;
+      // color: $color-white;
     }
   }
 
@@ -58,6 +66,11 @@
     );
     z-index: 1000;
     transition: transform 0.5s;
+
+    @include respond(tab-port) {
+        top: 2rem;
+        right: 6rem;
+      }
   }
 
   &__nav {
@@ -105,7 +118,7 @@
       transition: all 0.4s;
 
       span {
-        margin-right: 1.5rem;
+        // margin-right: 1.5rem;
         display: inline-block;
       }
     }

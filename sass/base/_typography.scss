@@ -3,7 +3,7 @@ body {
   font-weight: 400;
   font-size: $default-font-size;
   line-height: 1.7rem;
-  background-color: $color-background-bright;
+  background-color: $color-background-main;
 }
 .heading-primary {
   display: inline-block;
@@ -45,4 +45,10 @@ body {
   backface-visibility: hidden;
   -webkit-background-clip: text;
   letter-spacing: 1rem;
+
+   @include respond(tab-port) {
+      letter-spacing: 0.5rem;
+      font-size: 2rem;
+      line-height: 4rem;
+    }
 }
