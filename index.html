@@ -34,7 +34,29 @@
       <nav class="daily-prep-list__nav">
         <ul class="daily-prep-list__list">
           <li class="daily-prep-list__item">
-            <a href="#" class="daily-prep-list__link">Customize List</a>
+            <a
+              data-modal-target="#quickList"
+              href="#"
+              class="daily-prep-list__link"
+            >
+              Quick List
+            </a>
+
+            <div class="modal" id="quickList">
+              <div class="modal__header">
+                <div class="modal__title">Quick List</div>
+                <button data-close-button class="modal__close-button">
+                  &times;
+                </button>
+              </div>
+              <div class="modal__body">
+                This is where the first quick list will be.
+              </div>
+              <input type="number" class="foodCost__foodStart" id="foodStart" />
+              <label for="foodStart" class="foodCost__label"
+                >Enter food total amount here</label
+              >
+            </div>
           </li>
           <li class="daily-prep-list__item">
             <a href="#" class="daily-prep-list__link">Cold prep</a>
@@ -88,10 +110,6 @@
 
     <section class="section-start">
       <nav class="section-start__nav">
-        <!-- <a href="#" class="section-start--link">Recipe Book</a>
-        <a href="#" class="section-start--link">Conversions</a>
-        <a href="#" class="section-start--link">Food Safety</a>
-        <a href="#" class="section-start--link">Quick Notes</a> -->
         <a
           data-modal-target="#foodCost"
           href="#"
@@ -108,13 +126,32 @@
             </button>
           </div>
           <div class="modal__body">
-            This is where I will put the functionality for the food cost
-            calculator. I will put labels, buttons, and forms to do the math for
-            food cost analysis. The more text That I put in here the larger that
-            my modal will become. This is of great benefit because, I can
-            practice my typing as well.
+            Enter the inventory start and finish amounts, as well as, sales, and
+            other expenses. The labour can be entered ar taken from the labor
+            cost tool.
+          </div>
+          <div class="foodCost__calculator">
+            <input type="number" class="foodCost__input" id="inventoryStart" />
+            <label for="inventoryStart" class="foodCost__inputLabel"
+              >Enter starting inventory total amount here</label
+            >
+            <input type="number" class="foodCost__input" id="inventoryEnd" />
+            <label for="inventoryEnd" class="foodCost__inputLabel"
+              >Enter the ending inventory total amount here</label
+            >
+
+            <input type="number" class="foodCost__input" id="totalSales" />
+            <label for="totalSales" class="foodCost__inputLabel"
+              >Enter total sales amount here</label
+            >
+
+            <input type="number" class="foodCost__input" id="otherExpenses" />
+            <label for="otherExpenses" class="foodCost__inputLabel"
+              >Enter other expenses total amount here</label
+            >
           </div>
         </div>
+
 
         <a
           data-modal-target="#laborCost"
@@ -176,7 +213,8 @@
             </button>
           </div>
           <div class="modal__body">
-            This area will contain your company(or personal) recipes. this will also include a scale up or down tool for events or parties.
+            This area will contain your company(or personal) recipes. this will
+            also include a scale up or down tool for events or parties.
           </div>
         </div>
 

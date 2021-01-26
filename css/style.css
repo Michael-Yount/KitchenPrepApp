@@ -436,7 +436,7 @@ body {
   transform: translateY(0); }
 
 .modal {
-  background-image: linear-gradient(to bottom, rgba(241, 160, 255, 0.171), rgba(95, 179, 218, 0.383));
+  background-image: linear-gradient(to bottom, rgba(255, 249, 249, 0.596), rgba(95, 179, 218, 0.383));
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
@@ -444,7 +444,7 @@ body {
   position: fixed;
   border-bottom: 3px solid white;
   border-radius: 5px;
-  z-index: 3000;
+  z-index: 4000;
   width: 700px;
   max-width: 80%; }
   .modal.active {
@@ -468,7 +468,7 @@ body {
   .modal__body {
     padding: 10px 15px;
     line-height: 4rem;
-    letter-spacing: .1rem;
+    letter-spacing: 0.1rem;
     font-size: 2rem; }
 
 #overlay {
@@ -480,7 +480,7 @@ body {
   bottom: 0;
   transition: 200ms ease-in-out;
   background-image: linear-gradient(to bottom, rgba(22, 41, 31, 0.959), rgba(180, 221, 255, 0.986));
-  z-index: 2000;
+  z-index: 3000;
   pointer-events: none; }
   #overlay.active {
     opacity: 1;
@@ -564,3 +564,16 @@ body {
 .btn-text:active {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
   transform: translateY(0); }
+
+.foodCost__calculator {
+  background-image: linear-gradient(to bottom, rgba(255, 249, 249, 0.596), rgba(95, 179, 218, 0.383)); }
+
+.foodCost__input {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1rem;
+  display: block; }
+
+.foodCost__inputLabel {
+  text-transform: uppercase;
+  font-size: 1.5rem; }

@@ -8,7 +8,7 @@
   position: fixed;
   border-bottom: 3px solid white;
   border-radius: 5px;
-  z-index: 3000;
+  z-index: 4000;
   width: 700px;
   max-width: 80%;
 
@@ -42,7 +42,7 @@
   &__body {
     padding: 10px 15px;
     line-height: 4rem;
-    letter-spacing: .1rem;
+    letter-spacing: 0.1rem;
     font-size: 2rem;
   }
 }
