@@ -258,8 +258,13 @@ body {
   background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #95f1f1 50%);
   background-size: 250%;
   transition: all 0.4s; }
-  .daily-prep-list__link:link span, .daily-prep-list__link:visited span {
-    display: inline-block; }
+  @media (max-width: 37.5em) {
+    .daily-prep-list__link:link, .daily-prep-list__link:visited {
+      font-size: 2rem;
+      line-height: 2rem;
+      width: 30rem;
+      max-width: 100%;
+      letter-spacing: .3rem; } }
 
 .daily-prep-list__link:hover, .daily-prep-list__link:active {
   background-position: 100%;
