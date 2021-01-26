@@ -13,9 +13,22 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 1rem; }
+  @media (max-width: 56.25em) {
+    body {
+      padding: 0; } }
 
 @keyframes broccoliAnimation {
   0% {
@@ -35,8 +48,7 @@ body {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.7rem;
-  background-color: #fff1db;
-  padding: 1rem; }
+  background-color: #fff1db; }
 
 .heading-primary {
   display: inline-block;
@@ -51,8 +63,16 @@ body {
   .heading-primary--main {
     display: block;
     font-size: 7rem; }
+    @media (max-width: 37.5em) {
+      .heading-primary--main {
+        letter-spacing: 1rem;
+        font-size: 5rem; } }
   .heading-primary--sub {
     display: block; }
+    @media (max-width: 37.5em) {
+      .heading-primary--sub {
+        letter-spacing: 0.5rem;
+        font-size: 2rem; } }
 
 .heading-secondary {
   padding: 3rem;
@@ -90,12 +110,18 @@ body {
   clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
   padding: 10rem;
   border-radius: 1rem; }
+  @media (max-width: 37.5em) {
+    .header {
+      clip-path: none; } }
   .header__logo-box {
     position: absolute;
     top: 4rem;
     left: 4rem; }
   .header__logo {
     height: 8rem; }
+    @media (max-width: 37.5em) {
+      .header__logo {
+        height: 5rem; } }
   .header__text--box {
     position: absolute;
     top: 50%;
@@ -149,7 +175,7 @@ body {
   position: fixed;
   padding: 1rem;
   text-transform: uppercase;
-  color: black;
+  color: white;
   z-index: 1000;
   top: 2.5rem;
   right: 2.5rem;
@@ -157,6 +183,12 @@ body {
   background-image: linear-gradient(to bottom, rgba(95, 179, 218, 0.383), rgba(255, 234, 43, 0.246));
   border-radius: 3rem;
   box-shadow: 0.5rem 0.5rem 2rem #1b1b1b; }
+  @media (max-width: 37.5em) {
+    .daily-prep-list__button--label {
+      letter-spacing: none;
+      font-size: 1.2rem;
+      right: 5rem;
+      box-shadow: none; } }
 
 .daily-prep-list__background {
   height: 6rem;
@@ -271,6 +303,9 @@ body {
   border-radius: 15rem;
   background-image: linear-gradient(to bottom, rgba(228, 247, 255, 0.383), rgba(255, 249, 249, 0.596));
   box-shadow: 0.5rem 0.5rem 2rem #c0aeae; }
+  @media (max-width: 37.5em) {
+    .section-start--link:link, .section-start--link:visited {
+      margin-bottom: 2rem; } }
 
 .icon {
   position: relative;

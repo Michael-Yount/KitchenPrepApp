@@ -22,7 +22,7 @@
     position: fixed;
     padding: 1rem;
     text-transform: uppercase;
-    color: $color-black;
+    color: $color-white;
     z-index: 1000;
     top: 2.5rem;
     right: 2.5rem;
@@ -35,6 +35,14 @@
 
     border-radius: 3rem;
     box-shadow: $box-shadow-dark;
+
+    @include respond(phone) {
+    letter-spacing: none;
+    font-size: 1.2rem;
+    right: 5rem;
+    box-shadow: none;
+    
+    }
   }
 
   &__background {

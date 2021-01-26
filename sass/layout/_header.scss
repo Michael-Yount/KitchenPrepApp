@@ -13,6 +13,11 @@
   padding: 10rem;
   border-radius: 1rem;
 
+  @include respond(phone) {
+    clip-path: none;
+    
+    }
+
   &__logo-box {
     position: absolute;
     top: 4rem;
@@ -21,6 +26,11 @@
 
   &__logo {
     height: 8rem;
+
+    @include respond(phone) {
+    height:5rem
+    
+    }
     
   }
 

@@ -6,12 +6,17 @@
     width: 100%;
     top: 2rem;
     text-align: center;
+
+    
     
   }
 
   &__list {
     width: 100%;
     text-align: center;
+
+
+   
    
   }
 
@@ -36,6 +41,10 @@
     );
 
     box-shadow: $box-shadow-light;
+
+     @include respond(phone){
+      margin-bottom: 2rem;
+    }
     }
   }
 }
