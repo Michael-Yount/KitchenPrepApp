@@ -566,14 +566,24 @@ body {
   transform: translateY(0); }
 
 .foodCost__calculator {
-  background-image: linear-gradient(to bottom, rgba(255, 249, 249, 0.596), rgba(95, 179, 218, 0.383)); }
+  position: relative;
+  background-image: linear-gradient(to bottom, rgba(255, 249, 249, 0.596), rgba(95, 179, 218, 0.383));
+  margin-bottom: 5rem; }
 
 .foodCost__input {
   font-size: 1.5rem;
   text-align: center;
   padding: 1rem;
-  display: block; }
+  display: block;
+  border: none;
+  border-radius: 5px;
+  background-image: linear-gradient(to bottom, rgba(255, 249, 249, 0.596), rgba(95, 179, 218, 0.383));
+  margin: 1rem;
+  box-shadow: 0.5rem 0.5rem 2rem #1b1b1b; }
 
 .foodCost__inputLabel {
+  display: flexbox;
+  position: absolute;
   text-transform: uppercase;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  text-align: left; }
