@@ -1,4 +1,9 @@
 .modal {
+
+@include respond(phone) {
+    width: 300px; 
+}
+
   //   @include centeredContainer;
   @include greenGlassFade;
   top: 50%;
@@ -49,5 +54,12 @@
     line-height: 4rem;
     letter-spacing: 0.1rem;
     font-size: 2rem;
+
+    @include respond(phone) {
+    line-height: 2rem; 
+}
   }
+
+  
+
 }

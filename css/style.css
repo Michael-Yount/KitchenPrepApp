@@ -450,6 +450,9 @@ body {
   text-shadow: 0.3rem 0.3rem 0.45rem #181616;
   color: #f0f7fa;
   box-shadow: 0.5rem 0.5rem 2rem #1b1b1b; }
+  @media (max-width: 37.5em) {
+    .modal {
+      width: 300px; } }
   .modal.active {
     transform: translate(-50%, -50%) scale(1); }
   .modal__header {
@@ -474,6 +477,9 @@ body {
     line-height: 4rem;
     letter-spacing: 0.1rem;
     font-size: 2rem; }
+    @media (max-width: 37.5em) {
+      .modal__body {
+        line-height: 2rem; } }
 
 #overlay {
   position: fixed;
@@ -580,12 +586,16 @@ body {
   font-size: 1.5rem;
   text-align: center;
   padding: 1rem;
+  width: 15rem;
   border: none;
   display: block;
   border-radius: 5px;
   background-image: linear-gradient(to bottom, rgba(255, 249, 249, 0.596), rgba(95, 179, 218, 0.383));
   margin: 2rem;
   box-shadow: 0.5rem 0.5rem 2rem #1b1b1b; }
+  @media (max-width: 37.5em) {
+    .foodCost__input {
+      width: 100px; } }
 
 .foodCost__inputLabel {
   display: inline-block;
@@ -595,6 +605,10 @@ body {
   font-size: 2rem;
   text-align: left;
   color: white; }
+  @media (max-width: 37.5em) {
+    .foodCost__inputLabel {
+      font-size: 1.5rem;
+      width: 100px; } }
 
 .foodCostInputs {
   display: inline-block;

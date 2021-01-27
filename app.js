@@ -54,18 +54,27 @@ function closeModal(modal) {
 //////////////////////////////////////////////////////
 
 /////////  THESE ARE THE INPUTS
-const inventoryStart = document.getElementById("inventoryStart").value;
-const inventoryEnd = document.getElementById("inventoryEnd").value;
-const purchases = document.getElementById("purchases").value;
-const totalSales = document.getElementById("totalSales").value;
+const inventoryStart = document.getElementById("inventoryStart");
+const inventoryEnd = document.getElementById("inventoryEnd");
+const purchases = document.getElementById("purchases");
+const totalSales = document.getElementById("totalSales");
 //////////   THIS IS THE SUBMIT BUTTON
 const submitButton = document.querySelector(".foodCostSubmit");
 
 /////////////  ADD EVENT LISTENERS
 
 submitButton.addEventListener("click", () => {
-  let foodPercent = [];
-  let foodCostPercent = inventoryStart + purchases - inventoryEnd / totalSales;
-  foodPercent.push("foodCostPercent");
-  console.log(foodCostPercent);
+
+    if (inventoryStart.value >= inventoryEnd) {
+        console.log('inventory start and end are working');
+    
+    }
+//   let foodPercent = 0;
+//   let foodCostPercent =
+//     ((inventoryStart + purchases) - inventoryEnd) / totalSales;
+//   foodPercent += foodCostPercent;
+//     console.log(foodPercent);
+    console.log('submit is working')
 });
+
+

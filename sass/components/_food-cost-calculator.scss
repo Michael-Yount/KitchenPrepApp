@@ -12,12 +12,18 @@
     font-size: 1.5rem;
     text-align: center;
     padding: 1rem;
+    width: 15rem;
     border: none;
     display: block;
     border-radius: 5px;
     @include glassFade;
     margin: 2rem;
     box-shadow: $box-shadow-dark;
+
+
+     @include respond(phone) {
+    width: 100px; 
+}
   }
 
   &__inputLabel {
@@ -29,6 +35,11 @@
     text-align: left;
     // top: 1rem;
     color: $color-white;
+
+    @include respond(phone) {
+        font-size: 1.5rem;
+    width: 100px; 
+}
   }
 }
 
