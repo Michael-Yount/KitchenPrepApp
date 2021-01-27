@@ -128,37 +128,43 @@
           <div class="modal__body">
             Enter the inventory start and finish amounts, as well as, sales, and
             other expenses. The labor can be entered or taken from the labor
-            cost tool.
+            cost tool. the formula used is : opening inventory + purchases -
+            closing inventory / food sales.
           </div>
           <div class="foodCost__calculator">
-            
+            <div class="foodCostInputs">
               <label for="inventoryStart" class="foodCost__inputLabel"
-                >Enter starting inventory total amount here</label
+                >Starting inventory total</label
               >
-
-              <input
-                type="number"
-                class="foodCost__input"
-                id="inventoryStart"
-              />
-
-              <label for="inventoryEnd" class="foodCost__inputLabel"
-                >Enter the ending inventory total amount here</label
-              >
-              <input type="number" class="foodCost__input" id="inventoryEnd" />
-
-              <label for="totalSales" class="foodCost__inputLabel"
-                >Enter total sales amount here</label
-              >
-              <input type="number" class="foodCost__input" id="totalSales" />
-
-              <label for="otherExpenses" class="foodCost__inputLabel"
-                >Enter other expenses total amount here</label
-              >
-              <input type="number" class="foodCost__input" id="otherExpenses" />
             </div>
+
+            <input type="number" class="foodCost__input" id="inventoryStart" />
+
+            <label for="inventoryEnd" class="foodCost__inputLabel"
+              >Ending inventory total</label
+            >
+            <input type="number" class="foodCost__input" id="inventoryEnd" />
+
+            <label for="purchases" class="foodCost__inputLabel"
+              >Total food/provisions purchased
+            </label>
+            <input type="number" class="foodCost__input" id="purchases" />
+
+            <label for="totalSales" class="foodCost__inputLabel"
+              >Total food sales</label
+            >
+            <input type="number" class="foodCost__input" id="totalSales" />
+
+            <label for="foodCostPercent" class="foodCost__inputLabel"
+              >Food cost percent for this item/group</label
+            >
+            <input type="number" class="foodCost__input" id="foodCostPercent" />
           </div>
-        
+
+          <button class="foodCostSubmit">Submit</button>
+
+        </div>
+
         <a
           data-modal-target="#laborCost"
           href="#"

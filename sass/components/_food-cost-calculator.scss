@@ -1,27 +1,38 @@
 .foodCost {
   &__calculator {
+      color: $text-color-main;
     position: relative;
-    @include glassFade;
-    margin-bottom: 5rem;
+    // display: flexbox;
+    @include glassFadeDark;
+    margin-bottom:  2rem;
+    padding: 2rem;
   }
 
   &__input {
     font-size: 1.5rem;
     text-align: center;
     padding: 1rem;
-    display: block;
     border: none;
+    display: block;
     border-radius: 5px;
     @include glassFade;
-    margin: 1rem;
+    margin: 2rem;
     box-shadow: $box-shadow-dark;
   }
 
   &__inputLabel {
-    display: flexbox;
+      display: inline-block;
+      width: 240px;
     position: absolute;
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: left;
+    // top: 1rem;
+    color: $color-white;
   }
+}
+
+.foodCostInputs {
+    display: inline-block;
+    width: 100%;
 }

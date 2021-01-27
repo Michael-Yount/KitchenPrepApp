@@ -1,6 +1,6 @@
 .modal {
   //   @include centeredContainer;
-  @include glassFade;
+  @include greenGlassFade;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
@@ -11,6 +11,10 @@
   z-index: 4000;
   width: 700px;
   max-width: 80%;
+  text-shadow: $text-shadow-dark;
+  color: $text-color-main;
+
+  box-shadow: $box-shadow-dark;
 
   &.active {
     transform: translate(-50%, -50%) scale(1);
@@ -33,6 +37,7 @@
 
   &__close-button {
     cursor: pointer;
+    color: $color-white;
     border: none;
     outline: none;
     background: none;

@@ -20,6 +20,22 @@
   );
 }
 
+@mixin greenGlassFade {
+  background-image: linear-gradient(
+    to bottom,
+    $transparent-green-glass,
+    $transparent-blue-glass
+  );
+}
+
+@mixin glassFadeDark {
+  background-image: linear-gradient(
+    to bottom,
+    $tinted-glass-smokey ,
+    $transparent-blue-glass
+  );
+}
+
 // Media querY manager
 
 //
