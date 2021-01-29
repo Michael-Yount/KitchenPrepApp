@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="/css/style.css" />
     <title>Kitchen Prep App</title>
   </head>
+
   <body>
     <div class="daily-prep-list">
       <label for="daily-prep-list" class="daily-prep-list__button--label"
@@ -52,10 +53,18 @@
               <div class="modal__body">
                 This is where the first quick list will be.
               </div>
-              <input type="number" class="foodCost__foodStart" id="foodStart" />
-              <label for="foodStart" class="foodCost__label"
-                >Enter food total amount here</label
-              >
+              <div class="task-list">
+                <h2 class="task-list__header">
+                  Enter your quick preps here 911
+                </h2>
+              </div>
+
+              <row class="task-list__container">
+                <div class="col-1-of-2">
+                  <input type="text" name="prep" id="preps" />
+                  <label for="prep" class="input__label"> </label>
+                </div>
+              </row>
             </div>
           </li>
           <li class="daily-prep-list__item">
@@ -73,6 +82,7 @@
         </ul>
       </nav>
     </div>
+
     <div class="icon">
       <img
         src="/referenceLibrary/images/broccoliSilou.png"
@@ -161,7 +171,9 @@
             <input type="number" class="foodCost__input" id="foodCostPercent" />
           </div>
 
-          <button class="foodCostSubmit">Submit</button>
+          <button class="foodCost__submit btn btn--glass btn--animated">
+            Submit
+          </button>
         </div>
 
         <a
@@ -266,8 +278,54 @@
     <footer class="footer">
       <div class="footer__logo">FOOTER LOGO</div>
     </footer>
+
     <!-- this is the grid section -->
     <!-- <section class="grid-test"> -->
+
+    <!-- <div class="modal" id="modalID">
+          <div class="modal__header">
+            <div class="modal__title">Food cost Calculator</div>
+            <button data-close-button class="modal__close-button">
+              &times;
+            </button>
+          </div>
+          <div class="modal__body">
+            Enter the inventory start and finish amounts, as well as, sales, and
+            other expenses. The labor can be entered or taken from the labor
+            cost tool. the formula used is : opening inventory + purchases -
+            closing inventory / food sales.
+          </div>
+        </div> -->
+
+    <!-- <div class="Cost__calculator">
+            <div class="foodCostInputs">
+              <label for="inventoryStart" class="foodCost__inputLabel"
+                >Starting inventory total</label
+              >
+            </div>
+
+            <input type="number" class="foodCost__input" id="inventoryStart" />
+
+            <label for="inventoryEnd" class="foodCost__inputLabel"
+              >Ending inventory total</label
+            >
+            <input type="number" class="foodCost__input" id="inventoryEnd" />
+
+            <label for="purchases" class="foodCost__inputLabel"
+              >Total food/provisions purchased
+            </label>
+            <input type="number" class="foodCost__input" id="purchases" />
+
+            <label for="totalSales" class="foodCost__inputLabel"
+              >Total food sales</label
+            >
+            <input type="number" class="foodCost__input" id="totalSales" />
+
+            <label for="foodCostPercent" class="foodCost__inputLabel"
+              >Food cost percent for this item/group</label
+            >
+            <input type="number" class="foodCost__input" id="foodCostPercent" />
+          </div> -->
     <script src="/app.js"></script>
   </body>
 </html>

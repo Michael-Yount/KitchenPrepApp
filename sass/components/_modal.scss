@@ -13,7 +13,7 @@
   position: fixed;
   border-bottom: 3px solid white;
   border-radius: 5px;
-  z-index: 4000;
+  z-index: 4500;
   width: 700px;
   max-width: 80%;
   text-shadow: $text-shadow-dark;
@@ -23,6 +23,8 @@
 
   &.active {
     transform: translate(-50%, -50%) scale(1);
+  z-index: 4500;
+
   }
 
   &__header {

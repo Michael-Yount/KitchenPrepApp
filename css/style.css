@@ -185,7 +185,7 @@ body {
   top: 6rem;
   right: 6rem;
   border-radius: 50%;
-  z-index: 2000;
+  z-index: 1000;
   box-shadow: 0.5rem 0.5rem 2rem #1b1b1b;
   text-align: center;
   cursor: pointer; }
@@ -199,7 +199,7 @@ body {
   padding: 1rem;
   text-transform: uppercase;
   color: black;
-  z-index: 1000;
+  z-index: 500;
   top: 2.5rem;
   right: 2.5rem;
   letter-spacing: 0.5rem;
@@ -219,7 +219,7 @@ body {
   top: 6.5rem;
   right: 6.5rem;
   background-image: radial-gradient(#6b8486, rgba(15, 114, 119, 0.966));
-  z-index: 1000;
+  z-index: 500;
   transition: transform 0.5s; }
   @media (max-width: 56.25em) {
     .daily-prep-list__background {
@@ -232,7 +232,7 @@ body {
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 1500;
+  z-index: 500;
   opacity: 0;
   width: 0;
   transition: all 0.5s; }
@@ -325,7 +325,7 @@ body {
   height: 50%;
   left: 30rem;
   top: 10rem;
-  z-index: 500; }
+  z-index: 200; }
   .icon__broccoli {
     top: 1rem;
     display: block;
@@ -444,7 +444,7 @@ body {
   position: fixed;
   border-bottom: 3px solid white;
   border-radius: 5px;
-  z-index: 4000;
+  z-index: 4500;
   width: 700px;
   max-width: 80%;
   text-shadow: 0.3rem 0.3rem 0.45rem #181616;
@@ -454,7 +454,8 @@ body {
     .modal {
       width: 300px; } }
   .modal.active {
-    transform: translate(-50%, -50%) scale(1); }
+    transform: translate(-50%, -50%) scale(1);
+    z-index: 4500; }
   .modal__header {
     padding: 10px 15px;
     display: flex;
@@ -490,11 +491,12 @@ body {
   bottom: 0;
   transition: 200ms ease-in-out;
   background-image: linear-gradient(to bottom, rgba(22, 41, 31, 0.959), rgba(180, 221, 255, 0.986));
-  z-index: 3000;
+  z-index: 500;
   pointer-events: none; }
   #overlay.active {
     opacity: 1;
-    pointer-events: all; }
+    pointer-events: all;
+    z-index: 3000; }
 
 .btn, .btn:link, .btn:visited {
   font-size: 2rem;
