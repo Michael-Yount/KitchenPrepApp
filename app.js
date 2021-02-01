@@ -8,16 +8,11 @@ const closeModalButtons = document.querySelectorAll("[data-close-button]");
 
 const overlay = document.getElementById("overlay");
 
-
 ////  LOAD EVENT LISTNERS  ///
 
 // loadEventListeners();
 
-
 // function loadEventListeners('submit', addPrep);
-
-
-
 
 // Quick List link BUTTONS
 
@@ -68,21 +63,24 @@ const inventoryEnd = document.getElementById("inventoryEnd");
 const purchases = document.getElementById("purchases");
 const totalSales = document.getElementById("totalSales");
 //////////   THIS IS THE SUBMIT BUTTON
-const submitButton = document.querySelector(".foodCostSubmit");
+const submitButton = document.querySelector(".foodCost__submit");
 
 /////////////  ADD EVENT LISTENERS
-
 submitButton.addEventListener("click", () => {
-    
-  let foodCostPercent =
-    ((inventoryStart.value + purchases.value) - (inventoryEnd.value));
-    let foodCost = totalSales.value / foodCostPercent;
-    // let foodPercent = (sales / foodCostPercent);
-    
-
-
-
-
+  let usage = (inventoryStart.value + purchases.value - inventoryEnd.value) / totalSales;
+  console.log(`submit is working ${usage}`);
 });
 
+// submitButton.addEventListener("click", () => {
+//     const foodCost = inventoryStart.value + purchases.value;
+//     console.log(foodCost)
+// });
 
+//     console.log("Submit is working");
+//     let foodCostPercent =
+//       inventoryStart.value + purchases.value - inventoryEnd.value;
+//     let foodCost = totalSales.value / foodCostPercent;
+//     // let foodPercent = (sales / foodCostPercent);
+
+//     console.log(foodCost);
+//   });

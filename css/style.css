@@ -579,7 +579,6 @@ body {
 
 .foodCost__calculator {
   color: #f0f7fa;
-  position: relative;
   background-image: linear-gradient(to bottom, rgba(22, 41, 31, 0.959), rgba(95, 179, 218, 0.383));
   margin-bottom: 2rem;
   padding: 2rem; }
@@ -590,7 +589,6 @@ body {
   padding: 1rem;
   width: 15rem;
   border: none;
-  display: block;
   border-radius: 5px;
   background-image: linear-gradient(to bottom, rgba(255, 249, 249, 0.596), rgba(95, 179, 218, 0.383));
   margin: 2rem;
@@ -601,8 +599,7 @@ body {
 
 .foodCost__inputLabel {
   display: inline-block;
-  width: 200px;
-  position: absolute;
+  width: 400px;
   text-transform: uppercase;
   font-size: 1.5rem;
   text-align: left;
@@ -611,7 +608,3 @@ body {
     .foodCost__inputLabel {
       font-size: 1.5rem;
       width: 100px; } }
-
-.foodCostInputs {
-  display: inline-block;
-  width: 100%; }
