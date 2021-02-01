@@ -66,9 +66,9 @@ const totalSales = document.getElementById("totalSales");
 const submitButton = document.querySelector(".foodCost__submit");
 
 /////////////  ADD EVENT LISTENERS
-submitButton.addEventListener("click", () => {
-  let usage = (inventoryStart.value + purchases.value - inventoryEnd.value) / totalSales;
-  console.log(`submit is working ${usage}`);
+submitButton.addEventListener("click",() => {
+  inventoryStart.value + purchases.value;
+console.log(`submit is working ${usage}`);
 });
 
 // submitButton.addEventListener("click", () => {
