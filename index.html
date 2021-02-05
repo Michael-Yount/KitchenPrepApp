@@ -144,23 +144,30 @@
           <button class="foodCost__submit btn btn--glass btn--animated">
             Submit
           </button>
-          <div class="foodCost__calculator">
 
-            
+          <div class="foodCost__calculator">
             <!-- <div class="foodCostInputs">
               
             </div> -->
+ <div class="operation operation--transfer">
+        <h2>Transfer money</h2>
+        <form class="form form--transfer">
+          <input type="text" class="form__input form__input--to" />
+          <input type="number" class="form__input form__input--amount" />
+          <button class="form__btn form__btn--transfer">&rarr;</button>
+          <label class="form__label">Transfer to</label>
+          <label class="form__label">Amount</label>
+        </form>
+      </div>
             <span class="foodCost__inputLabel">Starting inventory total</span>
             <input type="number" class="foodCost__input" id="inventoryStart" />
-
-           
 
             <span class="foodCost__inputLabel"
               >Total provisions purchased
             </span>
             <input type="number" class="foodCost__input" id="purchases" />
 
-             <span for="inventoryEnd" class="foodCost__inputLabel"
+            <span for="inventoryEnd" class="foodCost__inputLabel"
               >Ending inventory total</span
             >
             <input type="number" class="foodCost__input" id="inventoryEnd" />
@@ -173,8 +180,6 @@
             >
             <input type="number" class="foodCost__input" id="foodCostPercent" />
           </div>
-
-          
         </div>
 
         <a
