@@ -4,15 +4,14 @@
   display: block;
   width: 50%;
   height: 50%;
-  left: 30rem;
-  top: 10rem;
+  left: 25rem;
+  top: 3rem;
   z-index: 200;
 
   &__broccoli {
-    top: 1rem;
     display: block;
-    width: 10%;
-    padding: 1.2rem;
+    width: 15%;
+    padding: 1rem;
     position: absolute;
     animation-name: broccoliAnimation;
     animation-duration: 4s;
@@ -21,10 +20,10 @@
   }
 
   &__knife {
-    top: 9rem;
+    top: 10rem;
     // left: 6rem;
-    width: 10%;
-    padding: 1.2rem;
+    width: 15%;
+    padding: 1rem;
     position: absolute;
     animation-name: broccoliAnimation;
     animation-duration: 5s;
@@ -33,10 +32,10 @@
   }
 
   &__onion {
-    top: 15rem;
+    top: 18rem;
     left: 2rem;
-    width: 10%;
-    padding: 1.2rem;
+    width: 15%;
+    padding: 1rem;
     position: absolute;
     animation-name: broccoliAnimation;
     animation-duration: 7s;

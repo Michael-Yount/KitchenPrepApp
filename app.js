@@ -8,11 +8,7 @@ const closeModalButtons = document.querySelectorAll("[data-close-button]");
 
 const overlay = document.getElementById("overlay");
 
-////  LOAD EVENT LISTNERS  ///
-
-// loadEventListeners();
-
-// function loadEventListeners('submit', addPrep);
+////  LOAD EVENT LISTNERS  ///;
 
 // Quick List link BUTTONS
 
@@ -67,10 +63,12 @@ const submitButton = document.querySelector(".foodCost__submit");
 
 /////////////  ADD EVENT LISTEner
 submitButton.addEventListener("click", function (e) {
-  const totalInventory = function () {
-    
-  }
+  const amount =
+    Number(inventoryStart.value) +
+    Number(purchases.value) -
+    Number(inventoryEnd.value) /
+    Number(totalSales.value);
 
-  console.log(`Submit button pressed ${totalInventory}`);
+  console.log(`Submit button pressed ${amount}`);
   e.preventDefault();
 });

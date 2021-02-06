@@ -323,33 +323,32 @@ body {
   display: block;
   width: 50%;
   height: 50%;
-  left: 30rem;
-  top: 10rem;
+  left: 25rem;
+  top: 3rem;
   z-index: 200; }
   .icon__broccoli {
-    top: 1rem;
     display: block;
-    width: 10%;
-    padding: 1.2rem;
+    width: 15%;
+    padding: 1rem;
     position: absolute;
     animation-name: broccoliAnimation;
     animation-duration: 4s;
     animation-timing-function: cubic-bezier(0.42, 0, 0.5, 1.61);
     animation-fill-mode: forwards; }
   .icon__knife {
-    top: 9rem;
-    width: 10%;
-    padding: 1.2rem;
+    top: 10rem;
+    width: 15%;
+    padding: 1rem;
     position: absolute;
     animation-name: broccoliAnimation;
     animation-duration: 5s;
     animation-timing-function: cubic-bezier(0.42, 0, 0.5, 1.61);
     animation-fill-mode: forwards; }
   .icon__onion {
-    top: 15rem;
+    top: 18rem;
     left: 2rem;
-    width: 10%;
-    padding: 1.2rem;
+    width: 15%;
+    padding: 1rem;
     position: absolute;
     animation-name: broccoliAnimation;
     animation-duration: 7s;
