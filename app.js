@@ -61,6 +61,10 @@ const totalSales = document.getElementById("totalSales");
 //////////   THIS IS THE SUBMIT BUTTON
 const submitButton = document.querySelector(".foodCost__submit");
 
+// THIS IS THE FOOD COST PERCENT OUTPUT
+
+const foodCostPercent =  document.querySelector(".foodCost__output");
+
 /////////////  ADD EVENT LISTEner
 submitButton.addEventListener("click", function (e) {
 
@@ -70,6 +74,8 @@ submitButton.addEventListener("click", function (e) {
     Number(purchases.value) -
     Number(inventoryEnd.value) /
     Number(totalSales.value);
+  
+ foodCostPercent.textContent = `${amount}`
 
   console.log(`Submit button pressed ${amount}`);
   e.preventDefault();

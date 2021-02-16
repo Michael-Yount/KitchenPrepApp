@@ -246,7 +246,7 @@ body {
   transform: translate(-50%, -50%);
   list-style: none;
   width: 50%;
-  padding: 1rem; }
+  padding: rem; }
 
 .daily-prep-list__link:link, .daily-prep-list__link:visited {
   text-shadow: 0.3rem 0.3rem 0.45rem #181616;
@@ -270,7 +270,7 @@ body {
       line-height: 5rem;
       width: 30rem;
       max-width: 100%;
-      letter-spacing: 0.1rem;
+      letter-spacing: .1rem;
       padding: 1rem;
       margin: 10px;
       border-bottom: 1px solid; } }
@@ -511,12 +511,12 @@ body {
   bottom: 0;
   transition: 200ms ease-in-out;
   background-image: linear-gradient(to bottom, rgba(22, 41, 31, 0.959), rgba(180, 221, 255, 0.986));
-  z-index: 500;
+  z-index: 1500;
   pointer-events: none; }
   #overlay.active {
     opacity: 1;
     pointer-events: all;
-    z-index: 3000; }
+    z-index: 1500; }
 
 .btn, .btn:link, .btn:visited {
   font-size: 2rem;
@@ -608,7 +608,11 @@ body {
   color: #f0f7fa;
   background-image: linear-gradient(to bottom, rgba(22, 41, 31, 0.959), rgba(95, 179, 218, 0.383));
   margin-bottom: 2rem;
-  padding: 2rem; }
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 .foodCost__input {
   font-size: 1.5rem;
@@ -617,6 +621,10 @@ body {
   width: 15rem;
   border: none;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-image: linear-gradient(to bottom, rgba(255, 249, 249, 0.596), rgba(95, 179, 218, 0.383));
   margin: 2rem;
   box-shadow: 0.5rem 0.5rem 2rem #1b1b1b; }
@@ -625,13 +633,23 @@ body {
       width: 100px; } }
 
 .foodCost__inputLabel {
-  display: inline-block;
   width: 400px;
   text-transform: uppercase;
   font-size: 1.5rem;
   text-align: left;
-  color: white; }
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
   @media (max-width: 37.5em) {
     .foodCost__inputLabel {
       font-size: 1.5rem;
       width: 100px; } }
+
+.foodCost__output {
+  padding: 1rem;
+  font-size: 3rem;
+  border: 1px solid;
+  border-radius: 15rem;
+  margin-top: 1rem; }

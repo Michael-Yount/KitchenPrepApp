@@ -18,10 +18,10 @@
     text-align: center;
     cursor: pointer;
 
-    @include respond(tab-port) {
-      top: 2rem;
-      right: 6rem;
-    }
+     @include respond(tab-port) {
+        top: 2rem;
+        right: 6rem;
+      }
   }
   &__button--label {
     position: fixed;
@@ -68,9 +68,9 @@
     transition: transform 0.5s;
 
     @include respond(tab-port) {
-      top: 2rem;
-      right: 6rem;
-    }
+        top: 2rem;
+        right: 6rem;
+      }
   }
 
   &__nav {
@@ -92,7 +92,7 @@
     transform: translate(-50%, -50%);
     list-style: none;
     width: 50%;
-    padding: 1rem;
+    padding: rem;
   }
 
   &__item {
@@ -129,10 +129,11 @@
         line-height: 5rem;
         width: 30rem;
         max-width: 100%;
-        letter-spacing: 0.1rem;
+        letter-spacing: .1rem;
         padding: 1rem;
         margin: 10px;
         border-bottom: 1px solid;
+
       }
     }
 
