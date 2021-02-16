@@ -63,19 +63,17 @@ const submitButton = document.querySelector(".foodCost__submit");
 
 // THIS IS THE FOOD COST PERCENT OUTPUT
 
-const foodCostPercent =  document.querySelector(".foodCost__output");
+const foodCostPercent = document.querySelector(".foodCost__output");
 
 /////////////  ADD EVENT LISTEner
 submitButton.addEventListener("click", function (e) {
-
   // THIS PROCESSES TO FOOD COST PERCENT
   const amount =
     Number(inventoryStart.value) +
     Number(purchases.value) -
-    Number(inventoryEnd.value) /
-    Number(totalSales.value);
-  
- foodCostPercent.textContent = `${amount}`
+    Number(inventoryEnd.value) / Number(totalSales.value);
+
+  foodCostPercent.textContent = `Math.floor(${amount})`;
 
   console.log(`Submit button pressed ${amount}`);
   e.preventDefault();
