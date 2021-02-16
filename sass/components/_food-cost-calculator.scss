@@ -57,12 +57,15 @@ align-items: center;
     border: 1px solid;
     border-radius: 15rem;
     margin-top: 1rem;
+
+    
   }
 
   &__submit {
     display: flex;
-    
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 }
 

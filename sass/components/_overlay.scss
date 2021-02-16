@@ -19,5 +19,6 @@
     opacity: 1;
     pointer-events: all;
     z-index: 1500;
+    backface-visibility: hidden;
   }
 }

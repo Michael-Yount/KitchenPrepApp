@@ -474,7 +474,8 @@ body {
       width: 300px; } }
   .modal.active {
     transform: translate(-50%, -50%) scale(1);
-    z-index: 4500; }
+    z-index: 4500;
+    backface-visibility: hidden; }
   .modal__header {
     padding: 10px 15px;
     display: flex;
@@ -516,7 +517,8 @@ body {
   #overlay.active {
     opacity: 1;
     pointer-events: all;
-    z-index: 1500; }
+    z-index: 1500;
+    backface-visibility: hidden; }
 
 .btn, .btn:link, .btn:visited {
   font-size: 2rem;
@@ -656,4 +658,6 @@ body {
 
 .foodCost__submit {
   display: flex;
-  align-items: center; }
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
