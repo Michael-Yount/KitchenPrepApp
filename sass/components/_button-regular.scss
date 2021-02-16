@@ -7,10 +7,22 @@
     text-transform: uppercase;
     text-decoration: none;
     padding: 1.5rem 2rem;
-    display: inline-block;
     border-radius: 10rem;
     transition: all 0.2s;
     position: relative;
+    width: 20%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include respond(phone) {
+      width: fit-content;
+
+
+    }
+  
 
     //change for the button
     border: none;

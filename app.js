@@ -63,6 +63,8 @@ const submitButton = document.querySelector(".foodCost__submit");
 
 /////////////  ADD EVENT LISTEner
 submitButton.addEventListener("click", function (e) {
+
+  // THIS PROCESSES TO FOOD COST PERCENT
   const amount =
     Number(inventoryStart.value) +
     Number(purchases.value) -

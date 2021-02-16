@@ -1,8 +1,7 @@
 .modal {
-
-@include respond(phone) {
-    width: 300px; 
-}
+  @include respond(phone) {
+    width: 300px;
+  }
 
   //   @include centeredContainer;
   @include greenGlassFade;
@@ -23,8 +22,7 @@
 
   &.active {
     transform: translate(-50%, -50%) scale(1);
-  z-index: 4500;
-
+    z-index: 4500;
   }
 
   &__header {
@@ -58,10 +56,8 @@
     font-size: 2rem;
 
     @include respond(phone) {
-    line-height: 2rem; 
-}
+      line-height: 2rem;
+      padding: 0%;
+    }
   }
-
-  
-
 }
