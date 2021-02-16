@@ -1,15 +1,22 @@
-.icon
-       {
+.icon {
   position: relative;
-  display: block;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   width: 50%;
   height: 50%;
   left: 25rem;
   top: 3rem;
   z-index: 200;
 
+  @include respond(phone) {
+    left: 5rem;
+    top: 10rem;
+  }
+
   &__broccoli {
-    display: block;
     width: 15%;
     padding: 1rem;
     position: absolute;
@@ -17,6 +24,12 @@
     animation-duration: 4s;
     animation-timing-function: cubic-bezier(0.42, 0, 0.5, 1.61);
     animation-fill-mode: forwards;
+
+    @include respond(phone) {
+      left: 5rem;
+      top: 1rem;
+      width: 30%;
+    }
   }
 
   &__knife {
@@ -29,6 +42,12 @@
     animation-duration: 5s;
     animation-timing-function: cubic-bezier(0.42, 0, 0.5, 1.61);
     animation-fill-mode: forwards;
+
+    @include respond(phone) {
+      left: 5rem;
+      top: 7rem;
+      width: 30%;
+    }
   }
 
   &__onion {
@@ -41,5 +60,11 @@
     animation-duration: 7s;
     animation-timing-function: cubic-bezier(0.42, 0, 0.5, 1.61);
     animation-fill-mode: forwards;
+
+    @include respond(phone) {
+      left: 5rem;
+      top: 11rem;
+      width: 40%;
+    }
   }
 }

@@ -55,7 +55,9 @@
     padding: 10px 15px;
     line-height: 3rem;
     letter-spacing: 0.1rem;
-    font-size: 2rem;
+    font-size: 3rem;
+
+    display: flex;
 
     @include respond(phone) {
       line-height: 2rem;

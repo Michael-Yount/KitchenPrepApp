@@ -60,20 +60,19 @@ const purchases = document.getElementById("purchases");
 const totalSales = document.getElementById("totalSales");
 //////////   THIS IS THE SUBMIT BUTTON
 const submitButton = document.querySelector(".foodCost__submit");
-
 // THIS IS THE FOOD COST PERCENT OUTPUT
-
 const foodCostPercent = document.querySelector(".foodCost__output");
-
 /////////////  ADD EVENT LISTEner
 submitButton.addEventListener("click", function (e) {
-  // THIS PROCESSES TO FOOD COST PERCENT
-  const amount =
-    Number(inventoryStart.value) +
-    Number(purchases.value) -
-    Number(inventoryEnd.value) / Number(totalSales.value);
 
-  foodCostPercent.textContent = `Math.floor(${amount})`;
+  // THIS PROCESSES TO FOOD COST PERCENT
+  
+  const amount = 
+    Number(inventoryStart.value) +
+      Number(purchases.value) -
+      Number(inventoryEnd.value) / Number(totalSales.value);
+
+    foodCostPercent.textContent = Math.floor(`${amount}`);
 
   console.log(`Submit button pressed ${amount}`);
   e.preventDefault();

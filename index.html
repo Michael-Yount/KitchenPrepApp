@@ -19,6 +19,10 @@
 
   <body>
     <div class="daily-prep-list">
+
+      <div class="overlay" id="overlay"></div>
+
+
       <label for="daily-prep-list" class="daily-prep-list__button--label"
         >Prep Now</label
       >
@@ -138,9 +142,7 @@
           <div class="modal__body">
             Inventory and Food Cost, as well as per plate cost.
           </div>
-          <button class="foodCost__submit btn btn--glass btn--animated">
-            Submit
-          </button>
+          
 
           <div class="foodCost__calculator">
             <!-- <div class="foodCostInputs">
@@ -175,7 +177,12 @@
             <span class="foodCost__inputLabel"
               >Food cost percent for this item</span
             >
-            <label class="foodCost__output" id="foodCostPercent"> This Number </label>
+            <label class="foodCost__output" id="foodCostPercent" placeholder="food cost" ></label>
+
+            <button class="foodCost__submit btn btn--glass btn--animated">
+            Submit
+          </button>
+
           </div>
         </div>
 
@@ -269,7 +276,6 @@
         <!-- <a href="#" class="section-start--link">Labor Cost</a> -->
       </nav>
 
-      <div class="overlay" id="overlay"></div>
 
       <div class="section-start__heading u-center-text">
         <h2 class="heading-secondary u-margin-bottom-big">

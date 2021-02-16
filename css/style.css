@@ -249,6 +249,7 @@ body {
   padding: rem; }
 
 .daily-prep-list__link:link, .daily-prep-list__link:visited {
+  z-index: 1000;
   text-shadow: 0.3rem 0.3rem 0.45rem #181616;
   font-size: 4rem;
   font-weight: 300;
@@ -333,14 +334,19 @@ body {
 
 .icon {
   position: relative;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 50%;
   height: 50%;
   left: 25rem;
   top: 3rem;
   z-index: 200; }
+  @media (max-width: 37.5em) {
+    .icon {
+      left: 5rem;
+      top: 10rem; } }
   .icon__broccoli {
-    display: block;
     width: 15%;
     padding: 1rem;
     position: absolute;
@@ -348,6 +354,11 @@ body {
     animation-duration: 4s;
     animation-timing-function: cubic-bezier(0.42, 0, 0.5, 1.61);
     animation-fill-mode: forwards; }
+    @media (max-width: 37.5em) {
+      .icon__broccoli {
+        left: 5rem;
+        top: 1rem;
+        width: 30%; } }
   .icon__knife {
     top: 10rem;
     width: 15%;
@@ -357,6 +368,11 @@ body {
     animation-duration: 5s;
     animation-timing-function: cubic-bezier(0.42, 0, 0.5, 1.61);
     animation-fill-mode: forwards; }
+    @media (max-width: 37.5em) {
+      .icon__knife {
+        left: 5rem;
+        top: 7rem;
+        width: 30%; } }
   .icon__onion {
     top: 18rem;
     left: 2rem;
@@ -367,6 +383,11 @@ body {
     animation-duration: 7s;
     animation-timing-function: cubic-bezier(0.42, 0, 0.5, 1.61);
     animation-fill-mode: forwards; }
+    @media (max-width: 37.5em) {
+      .icon__onion {
+        left: 5rem;
+        top: 11rem;
+        width: 40%; } }
 
 .btn, .btn:link, .btn:visited {
   font-size: 2rem;
@@ -497,7 +518,8 @@ body {
     padding: 10px 15px;
     line-height: 3rem;
     letter-spacing: 0.1rem;
-    font-size: 2rem; }
+    font-size: 3rem;
+    display: flex; }
     @media (max-width: 37.5em) {
       .modal__body {
         line-height: 2rem;
