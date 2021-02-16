@@ -653,3 +653,7 @@ body {
   border: 1px solid;
   border-radius: 15rem;
   margin-top: 1rem; }
+
+.foodCost__submit {
+  display: flex;
+  align-items: center; }

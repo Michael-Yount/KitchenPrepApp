@@ -60,6 +60,9 @@ align-items: center;
   }
 
   &__submit {
+    display: flex;
+    
+    align-items: center;
   }
 }
 
