@@ -25,15 +25,15 @@
     animation-fill-mode: forwards;
 
     @include respond(phone) {
-      left: 5rem;
-      top: 1rem;
+      // left: 5rem;
+      // top: 1rem;
       width: 30%;
+      margin: 2rem;
     }
   }
 
   &__knife {
     top: 10rem;
-    // left: 6rem;
     width: 15%;
     padding: 1rem;
     position: absolute;
@@ -43,9 +43,10 @@
     animation-fill-mode: forwards;
 
     @include respond(phone) {
-      left: 5rem;
-      top: 7rem;
-      width: 30%;
+      left:0;
+      // top: rem;
+      width: 40%;
+      // margin: 3rem;
     }
   }
 
@@ -61,9 +62,11 @@
     animation-fill-mode: forwards;
 
     @include respond(phone) {
-      left: 5rem;
-      top: 11rem;
+      // left: 2rem;
+      // top: 16rem;
       width: 40%;
+      // margin: 3rem;
+      // left: rem;
     }
   }
 }

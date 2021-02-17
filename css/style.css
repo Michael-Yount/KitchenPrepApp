@@ -355,9 +355,8 @@ body {
     animation-fill-mode: forwards; }
     @media (max-width: 37.5em) {
       .icon__broccoli {
-        left: 5rem;
-        top: 1rem;
-        width: 30%; } }
+        width: 30%;
+        margin: 2rem; } }
   .icon__knife {
     top: 10rem;
     width: 15%;
@@ -369,9 +368,8 @@ body {
     animation-fill-mode: forwards; }
     @media (max-width: 37.5em) {
       .icon__knife {
-        left: 5rem;
-        top: 7rem;
-        width: 30%; } }
+        left: 0;
+        width: 40%; } }
   .icon__onion {
     top: 18rem;
     left: 2rem;
@@ -384,8 +382,6 @@ body {
     animation-fill-mode: forwards; }
     @media (max-width: 37.5em) {
       .icon__onion {
-        left: 5rem;
-        top: 11rem;
         width: 40%; } }
 
 .btn, .btn:link, .btn:visited {
