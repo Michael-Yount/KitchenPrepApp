@@ -194,7 +194,7 @@ body {
   @media (max-width: 56.25em) {
     .daily-prep-list__button {
       top: 2rem;
-      right: 6rem; } }
+      right: 4rem; } }
 
 .daily-prep-list__button--label {
   position: fixed;
@@ -226,7 +226,7 @@ body {
   @media (max-width: 56.25em) {
     .daily-prep-list__background {
       top: 2rem;
-      right: 6rem; } }
+      right: 4rem; } }
 
 .daily-prep-list__nav {
   height: 100vh;
