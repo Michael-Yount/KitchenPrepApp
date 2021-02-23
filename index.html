@@ -18,11 +18,9 @@
   </head>
 
   <body>
+    <div class="overlay hidden"></div>
+
     <div class="daily-prep-list">
-
-      <div class="overlay" id="overlay"></div>
-
-
       <label for="daily-prep-list" class="daily-prep-list__button--label"
         >Prep Now</label
       >
@@ -47,7 +45,7 @@
               Quick List
             </a>
 
-            <div class="modal" id="quickList">
+            <div class="modal hidden" id="quickList">
               <div class="modal__header">
                 <div class="modal__title">Quick List</div>
                 <button data-close-button class="modal__close-button">
@@ -124,15 +122,15 @@
 
     <section class="section-start">
       <nav class="section-start__nav">
-        <a
+        <button
           data-modal-target="#foodCost"
           href="#"
-          class="section-start-button btn btn--animated btn--glass"
+          class="btn btn--show-modal btn--glass btn--animated btn--text section-start-button"
         >
           Food Cost
-        </a>
+        </button>
 
-        <div class="modal" id="foodCost">
+        <div class="modal hidden">
           <div class="modal__header">
             <div class="modal__title">Food cost Calculator</div>
             <button data-close-button class="modal__close-button">
@@ -142,7 +140,6 @@
           <div class="modal__body">
             Inventory and Food Cost, as well as per plate cost.
           </div>
-          
 
           <div class="foodCost__calculator">
             <!-- <div class="foodCostInputs">
@@ -177,24 +174,27 @@
             <span class="foodCost__inputLabel"
               >Food cost percent for this item</span
             >
-            <label class="foodCost__output" id="foodCostPercent" placeholder="food cost" ></label>
+            <label
+              class="foodCost__output"
+              id="foodCostPercent"
+              placeholder="food cost"
+            ></label>
 
             <button class="foodCost__submit btn btn--glass btn--animated">
-            Submit
-          </button>
-
+              Submit
+            </button>
           </div>
         </div>
 
-        <a
-          data-modal-target="#laborCost"
+         <button
+          data-modal-target="#foodCost"
           href="#"
-          class="section-start-button btn btn--animated btn--glass"
+          class="btn btn--show-modal btn--glass btn--animated"
         >
-          labor cost
-        </a>
+          Labor Cost
+        </button>
 
-        <div class="modal" id="laborCost">
+        <div class="modal hidden">
           <div class="modal__header">
             <div class="modal__title">Labor cost Calculator</div>
             <button data-close-button class="modal__close-button">
@@ -216,7 +216,7 @@
           Food Safety
         </a>
 
-        <div class="modal" id="foodSafety">
+        <div class="modal hidden">
           <div class="modal__header">
             <div class="modal__title">Food safety reference</div>
             <button data-close-button class="modal__close-button">
@@ -238,7 +238,7 @@
           Recipes
         </a>
 
-        <div class="modal" id="recipes">
+        <div class="modal hidden" id="recipes">
           <div class="modal__header">
             <div class="modal__title">Recipes</div>
             <button data-close-button class="modal__close-button">
@@ -259,7 +259,7 @@
           conversions
         </a>
 
-        <div class="modal" id="conversions">
+        <div class="modal hidden" id="conversions">
           <div class="modal__header">
             <div class="modal__title">Conversions</div>
             <button data-close-button class="modal__close-button">
@@ -275,7 +275,6 @@
 
         <!-- <a href="#" class="section-start--link">Labor Cost</a> -->
       </nav>
-
 
       <div class="section-start__heading u-center-text">
         <h2 class="heading-secondary u-margin-bottom-big">

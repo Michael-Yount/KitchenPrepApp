@@ -519,6 +519,9 @@ body {
       .modal__body {
         line-height: 2rem;
         padding: 0%; } }
+  .modal.hidden {
+    visibility: hidden;
+    opacity: 0; }
 
 #overlay {
   position: fixed;
@@ -528,7 +531,7 @@ body {
   right: 0;
   bottom: 0;
   transition: 200ms ease-in-out;
-  background-image: linear-gradient(to bottom, rgba(22, 41, 31, 0.959), rgba(180, 221, 255, 0.986));
+  backdrop-filter: blur(4px);
   z-index: 1500;
   pointer-events: none; }
   #overlay.active {
@@ -536,6 +539,9 @@ body {
     pointer-events: all;
     z-index: 1500;
     backface-visibility: hidden; }
+  #overlay.hidden {
+    visibility: hidden;
+    opacity: 0; }
 
 .btn, .btn:link, .btn:visited {
   font-size: 2rem;

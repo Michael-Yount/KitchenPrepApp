@@ -7,11 +7,13 @@
   bottom: 0;
   transition: 200ms ease-in-out;
 
-  background-image: linear-gradient(
-    to bottom,
-    $tinted-glass-smokey,
-    $tinted-glass-white
-  );
+
+  backdrop-filter: blur(4px);
+  // background-image: linear-gradient(
+  //   to bottom,
+  //   $tinted-glass-smokey,
+  //   $tinted-glass-white
+  // );
   z-index: 1500;
   pointer-events: none;
 
@@ -21,4 +23,11 @@
     z-index: 1500;
     backface-visibility: hidden;
   }
+
+&.hidden {
+  visibility: hidden;
+  opacity: 0
+;
+}
+
 }

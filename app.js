@@ -2,51 +2,41 @@
 
 // Variables
 // THIS IS THE BUTTON FUNCTIONALITY FOR THE MODAL
-const openModalButtons = document.querySelectorAll("[data-modal-target]");
-const closeModalButtons = document.querySelectorAll("[data-close-button]");
-//OVERLAY
 
-const overlay = document.getElementById("overlay");
+const openModalButtons = document.querySelectorAll(".btn--show-modal");
+const closeModalButtons = document.querySelectorAll(".modal__close-button");
+// MODAL
+const modal = document.querySelector(".modal");
+//OVERLAY
+const overlay = document.querySelector(".overlay");
 
 ////  LOAD EVENT LISTNERS  ///;
 
 // Quick List link BUTTONS
 
-openModalButtons.forEach((link) => {
-  link.addEventListener("click", () => {
-    const modal = document.querySelector(link.dataset.modalTarget);
-    openModal(modal);
+const openModal = function (e) {
+  e.preventDefault();
+  console.log('OpenModal')
+  modal.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+};
 
-    console.log("open button is working");
-  });
+const closeModal = function () {
+  modal.classList.add("hidden");
+  overlay.classList.add("hidden");
+};
+
+openModalButtons.forEach(btn => btn.addEventListener("click", openModal));
+
+overlay.addEventListener("click", closeModal);
+// closeModalButtons.addEventListener("click", closeModal);
+
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+    closeModal();
+  }
 });
 
-overlay.addEventListener("click", () => {
-  const modals = document.querySelectorAll(".modal.active");
-  modals.forEach((modal) => {
-    closeModal(modal);
-  });
-});
-
-//close buttons
-closeModalButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const modal = button.closest(".modal");
-    closeModal(modal);
-  });
-});
-
-function openModal(modal) {
-  if (modal == null) return;
-  modal.classList.add("active");
-  overlay.classList.add("active");
-}
-
-function closeModal(modal) {
-  if (modal == null) return;
-  modal.classList.remove("active");
-  overlay.classList.remove("active");
-}
 /////////////////////////////////////////////////////////////
 ////////////////////  END MODAL FUNCTIONALITY   /////////////
 
@@ -64,15 +54,14 @@ const submitButton = document.querySelector(".foodCost__submit");
 const foodCostPercent = document.querySelector(".foodCost__output");
 /////////////  ADD EVENT LISTEner
 submitButton.addEventListener("click", function (e) {
-
   // THIS PROCESSES TO FOOD COST PERCENT
-  
-  const amount = 
-    Number(inventoryStart.value) +
-      Number(purchases.value) -
-      Number(inventoryEnd.value) / Number(totalSales.value);
 
-    foodCostPercent.textContent = Math.floor(`${amount}`);
+  const amount =
+    Number(inventoryStart.value) +
+    Number(purchases.value) -
+    Number(inventoryEnd.value) / Number(totalSales.value);
+
+  foodCostPercent.textContent = Math.floor(`${amount}`);
 
   console.log(`Submit button pressed ${amount}`);
   e.preventDefault();
