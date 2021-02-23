@@ -4,7 +4,7 @@
 // THIS IS THE BUTTON FUNCTIONALITY FOR THE MODAL
 
 const openModalButtons = document.querySelectorAll(".btn--show-modal");
-const closeModalButtons = document.querySelectorAll(".modal__close-button");
+const closeModalButtons = document.querySelector(".modal__close-button");
 // MODAL
 const modal = document.querySelector(".modal");
 //OVERLAY
@@ -16,7 +16,7 @@ const overlay = document.querySelector(".overlay");
 
 const openModal = function (e) {
   e.preventDefault();
-  console.log('OpenModal')
+  console.log("OpenModal");
   modal.classList.remove("hidden");
   overlay.classList.remove("hidden");
 };
@@ -26,7 +26,10 @@ const closeModal = function () {
   overlay.classList.add("hidden");
 };
 
-openModalButtons.forEach(btn => btn.addEventListener("click", openModal));
+// for (let i = 0; i < openModalButtons.length; ++i)
+//   openModalButtons[i].addEventListener("click", openModal);
+
+openModalButtons.forEach((btn) => btn.addEventListener("click", openModal));
 
 overlay.addEventListener("click", closeModal);
 // closeModalButtons.addEventListener("click", closeModal);
