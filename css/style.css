@@ -474,7 +474,7 @@ body {
   background-image: linear-gradient(to bottom, rgba(54, 223, 54, 0.383), rgba(95, 179, 218, 0.383));
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(0);
+  transform: translate(-50%, -50%) scale(1);
   transition: 200ms ease-in-out;
   position: fixed;
   border-bottom: 3px solid white;
@@ -488,10 +488,6 @@ body {
   @media (max-width: 37.5em) {
     .modal {
       width: 300px; } }
-  .modal.active {
-    transform: translate(-50%, -50%) scale(1);
-    z-index: 4500;
-    backface-visibility: hidden; }
   .modal__header {
     padding: 10px 15px;
     display: flex;
@@ -519,29 +515,24 @@ body {
       .modal__body {
         line-height: 2rem;
         padding: 0%; } }
-  .modal.hidden {
-    visibility: hidden;
-    opacity: 0; }
 
-#overlay {
+.hidden {
+  display: none; }
+
+.overlay {
   position: fixed;
-  opacity: 0;
+  opacity: 1;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   transition: 200ms ease-in-out;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(15px);
   z-index: 1500;
   pointer-events: none; }
-  #overlay.active {
-    opacity: 1;
-    pointer-events: all;
-    z-index: 1500;
-    backface-visibility: hidden; }
-  #overlay.hidden {
-    visibility: hidden;
-    opacity: 0; }
+
+.hidden {
+  display: none; }
 
 .btn, .btn:link, .btn:visited {
   font-size: 2rem;

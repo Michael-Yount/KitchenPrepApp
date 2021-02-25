@@ -1,14 +1,13 @@
-#overlay {
+.overlay {
   position: fixed;
-  opacity: 0;
+  opacity: 1;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   transition: 200ms ease-in-out;
 
-
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(15px);
   // background-image: linear-gradient(
   //   to bottom,
   //   $tinted-glass-smokey,
@@ -17,17 +16,16 @@
   z-index: 1500;
   pointer-events: none;
 
-  &.active {
-    opacity: 1;
-    pointer-events: all;
-    z-index: 1500;
-    backface-visibility: hidden;
-  }
-
-&.hidden {
-  visibility: hidden;
-  opacity: 0
-;
+  // &.active {
+  //   opacity: 1;
+  //   pointer-events: all;
+  //   z-index: 1500;
+  //   backface-visibility: hidden;
+  // }
 }
 
+.hidden {
+  // visibility: hidden;
+  // opacity: 0;
+  display: none;
 }

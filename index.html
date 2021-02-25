@@ -37,14 +37,14 @@
       <nav class="daily-prep-list__nav">
         <ul class="daily-prep-list__list">
           <li class="daily-prep-list__item">
-            <a href="#" class="daily-prep-list__link btn--show-modal">
+            <a href="#" class="daily-prep-list__link open-modal">
               Quick List
             </a>
 
             <div class="modal hidden" id="quickList">
               <div class="modal__header">
                 <div class="modal__title">Quick List</div>
-                <button class="modal__close-button">&times;</button>
+                <button class="close-modal">&times;</button>
               </div>
               <div class="modal__body">
                 This is where the first quick list will be.
@@ -120,7 +120,7 @@
       <nav class="section-start__nav">
         <button
           href="#"
-          class="btn--show-modal btn--glass btn--animated btn--text section-start-button btn"
+          class="open-modal btn--glass btn--animated btn--text section-start-button btn"
         >
           Food Cost
         </button>
@@ -128,7 +128,7 @@
         <div class="modal hidden">
           <div class="modal__header">
             <div class="modal__title">Food cost Calculator</div>
-            <button class="modal__close-button">&times;</button>
+            <button class="close-modal">&times;</button>
           </div>
           <div class="modal__body">
             Inventory and Food Cost, as well as per plate cost.
@@ -182,7 +182,7 @@
         <button
           data-modal-target="#foodCost"
           href="#"
-          class="btn btn--show-modal btn--glass btn--animated"
+          class="btn open-modal btn--glass btn--animated"
         >
           Labor Cost
         </button>
@@ -190,7 +190,7 @@
         <div class="modal hidden">
           <div class="modal__header">
             <div class="modal__title">Labor cost Calculator</div>
-            <button data-close-button class="modal__close-button">
+            <button data-close-button class="close-modal">
               &times;
             </button>
           </div>
@@ -212,7 +212,7 @@
         <div class="modal hidden">
           <div class="modal__header">
             <div class="modal__title">Food safety reference</div>
-            <button data-close-button class="modal__close-button">
+            <button data-close-button class="close-modal">
               &times;
             </button>
           </div>
@@ -234,9 +234,7 @@
         <div class="modal hidden" id="recipes">
           <div class="modal__header">
             <div class="modal__title">Recipes</div>
-            <button data-close-button class="modal__close-button">
-              &times;
-            </button>
+            <button data-close-button class="close-modal">&times;</button>
           </div>
           <div class="modal__body">
             This area will contain your company(or personal) recipes. this will
@@ -255,9 +253,7 @@
         <div class="modal hidden" id="conversions">
           <div class="modal__header">
             <div class="modal__title">Conversions</div>
-            <button data-close-button class="modal__close-button">
-              &times;
-            </button>
+            <button data-close-button class="close-modal">&times;</button>
           </div>
           <div class="modal__body">
             This is where I will put a american to metric or vice versa

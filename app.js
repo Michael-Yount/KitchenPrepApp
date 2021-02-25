@@ -3,8 +3,8 @@
 // Variables
 // THIS IS THE BUTTON FUNCTIONALITY FOR THE MODAL
 
-const openModalButtons = document.querySelectorAll(".btn--show-modal");
-const closeModalButtons = document.querySelector(".modal__close-button");
+const openModalButtons = document.querySelectorAll("open-modal");
+const closeModalButtons = document.querySelector("close-modal");
 // MODAL
 const modal = document.querySelector(".modal");
 //OVERLAY
@@ -14,7 +14,7 @@ const overlay = document.querySelector(".overlay");
 
 // Quick List link BUTTONS
 
-const openModal = function (e) {
+const openModal = function () {
   e.preventDefault();
   console.log("OpenModal");
   modal.classList.remove("hidden");
@@ -22,6 +22,7 @@ const openModal = function (e) {
 };
 
 const closeModal = function () {
+  // e.preventDefault();
   modal.classList.add("hidden");
   overlay.classList.add("hidden");
 };
@@ -32,7 +33,7 @@ const closeModal = function () {
 openModalButtons.forEach((btn) => btn.addEventListener("click", openModal));
 
 overlay.addEventListener("click", closeModal);
-// closeModalButtons.addEventListener("click", closeModal);
+closeModalButtons.addEventListener("click", closeModal);
 
 document.addEventListener("keydown", function (e) {
   if (e.key === "Escape" && !modal.classList.contains("hidden")) {
