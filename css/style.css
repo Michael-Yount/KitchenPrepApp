@@ -528,6 +528,7 @@ body {
   bottom: 0;
   transition: 200ms ease-in-out;
   backdrop-filter: blur(15px);
+  background-image: linear-gradient(to bottom, rgba(22, 41, 31, 0.959), rgba(95, 179, 218, 0.383));
   z-index: 1500; }
 
 .hidden {
