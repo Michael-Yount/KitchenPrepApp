@@ -7,3 +7,4 @@ that can help make the job easier and more transparent.
 
 I would like to test how much cross-career usability can be possible as a productivity tool.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6a39061a-cec2-4dd2-a033-e8566229b1cb/deploy-status)](https://app.netlify.com/sites/kitchenprepapp/deploys)
