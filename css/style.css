@@ -479,7 +479,7 @@ body {
   position: fixed;
   border-bottom: 3px solid white;
   border-radius: 5px;
-  z-index: 4500;
+  z-index: 1600;
   width: 700px;
   max-width: 80%;
   text-shadow: 0.3rem 0.3rem 0.45rem #181616;
@@ -528,8 +528,7 @@ body {
   bottom: 0;
   transition: 200ms ease-in-out;
   backdrop-filter: blur(15px);
-  z-index: 1500;
-  pointer-events: none; }
+  z-index: 1500; }
 
 .hidden {
   display: none; }

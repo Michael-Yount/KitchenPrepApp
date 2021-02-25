@@ -8,24 +8,14 @@
   transition: 200ms ease-in-out;
 
   backdrop-filter: blur(15px);
-  // background-image: linear-gradient(
-  //   to bottom,
-  //   $tinted-glass-smokey,
-  //   $tinted-glass-white
-  // );
-  z-index: 1500;
-  pointer-events: none;
 
-  // &.active {
-  //   opacity: 1;
-  //   pointer-events: all;
-  //   z-index: 1500;
-  //   backface-visibility: hidden;
-  // }
+  z-index: 1500;
+  // pointer-events: none;
+
+ 
 }
 
 .hidden {
-  // visibility: hidden;
-  // opacity: 0;
+  
   display: none;
 }

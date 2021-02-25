@@ -3,37 +3,45 @@
 // Variables
 // THIS IS THE BUTTON FUNCTIONALITY FOR THE MODAL
 
-const openModalButtons = document.querySelectorAll("open-modal");
-const closeModalButtons = document.querySelector("close-modal");
-// MODAL
-const modal = document.querySelector(".modal");
+const openModalButtons = document.querySelectorAll("[data-modal-target]");
+const closeModalButtons = document.querySelectorAll("[data-close-modal-target]"
+);
+
 //OVERLAY
 const overlay = document.querySelector(".overlay");
 
-////  LOAD EVENT LISTNERS  ///;
+openModalButtons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const modal = document.querySelector(btn.dataset.modalTarget);
+    openModal(modal);
+  });
+});
 
-// Quick List link BUTTONS
+closeModalButtons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const modal = btn.closest(".modal");
+    closeModal(modal);
+  });
+});
 
-const openModal = function () {
-  e.preventDefault();
-  console.log("OpenModal");
+function openModal(modal) {
+  if (modal == null) return;
   modal.classList.remove("hidden");
   overlay.classList.remove("hidden");
-};
+}
 
-const closeModal = function () {
-  // e.preventDefault();
+function closeModal(modal) {
+  if (modal == null) return;
   modal.classList.add("hidden");
   overlay.classList.add("hidden");
-};
+}
 
-// for (let i = 0; i < openModalButtons.length; ++i)
-//   openModalButtons[i].addEventListener("click", openModal);
-
-openModalButtons.forEach((btn) => btn.addEventListener("click", openModal));
-
-overlay.addEventListener("click", closeModal);
-closeModalButtons.addEventListener("click", closeModal);
+overlay.addEventListener("click", () => {
+  const modals = document.querySelectorAll(".modal");
+  modals.forEach((modal) => {
+    closeModal(modal);
+  });
+});
 
 document.addEventListener("keydown", function (e) {
   if (e.key === "Escape" && !modal.classList.contains("hidden")) {
@@ -41,13 +49,11 @@ document.addEventListener("keydown", function (e) {
   }
 });
 
-/////////////////////////////////////////////////////////////
 ////////////////////  END MODAL FUNCTIONALITY   /////////////
 
 ///////////////////  THIS IS THE FOOD COST CALCULATOR
-//////////////////////////////////////////////////////
 
-/////////  THESE ARE THE INPUTS
+// /////////  THESE ARE THE INPUTS
 const inventoryStart = document.getElementById("inventoryStart");
 const inventoryEnd = document.getElementById("inventoryEnd");
 const purchases = document.getElementById("purchases");
