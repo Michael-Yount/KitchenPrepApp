@@ -67,9 +67,9 @@ submitButton.addEventListener("click", function (e) {
   // THIS PROCESSES TO FOOD COST PERCENT
 
   const amount =
-    Number(inventoryStart.value) +
-    Number(purchases.value) -
-    Number(inventoryEnd.value) / Number(totalSales.value);
+    (Number(inventoryStart.value) +
+    Number(purchases.value)) -
+   (Number(inventoryEnd.value) / Number(totalSales.value));
 
   foodCostPercent.textContent = Math.floor(`${amount}`);
 

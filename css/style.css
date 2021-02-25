@@ -187,7 +187,7 @@ body {
   top: 6rem;
   right: 6rem;
   border-radius: 50%;
-  z-index: 1000;
+  z-index: 600;
   box-shadow: 0.5rem 0.5rem 2rem #1b1b1b;
   text-align: center;
   cursor: pointer; }
@@ -249,7 +249,7 @@ body {
   padding: rem; }
 
 .daily-prep-list__link:link, .daily-prep-list__link:visited {
-  z-index: 1000;
+  z-index: 500;
   text-shadow: 0.3rem 0.3rem 0.45rem #181616;
   font-size: 4rem;
   font-weight: 300;
@@ -529,7 +529,7 @@ body {
   transition: 200ms ease-in-out;
   backdrop-filter: blur(15px);
   background-image: linear-gradient(to bottom, rgba(22, 41, 31, 0.959), rgba(95, 179, 218, 0.383));
-  z-index: 1500; }
+  z-index: 1100; }
 
 .hidden {
   display: none; }
