@@ -4,7 +4,8 @@
 // THIS IS THE BUTTON FUNCTIONALITY FOR THE MODAL
 
 const openModalButtons = document.querySelectorAll("[data-modal-target]");
-const closeModalButtons = document.querySelectorAll("[data-close-modal-target]"
+const closeModalButtons = document.querySelectorAll(
+  "[data-close-modal-target]"
 );
 
 //OVERLAY
@@ -67,12 +68,43 @@ submitButton.addEventListener("click", function (e) {
   // THIS PROCESSES TO FOOD COST PERCENT
 
   const amount =
-    (Number(inventoryStart.value) +
-    Number(purchases.value)) -
-   (Number(inventoryEnd.value) / Number(totalSales.value));
+    Number(inventoryStart.value) +
+    Number(purchases.value) -
+    Number(inventoryEnd.value) / Number(totalSales.value);
 
   foodCostPercent.textContent = Math.floor(`${amount}`);
 
   console.log(`Submit button pressed ${amount}`);
   e.preventDefault();
+});
+
+////////////////////////////////////////////////////////////////
+
+////////////////////          TAB ELEMENTS
+
+const tabs = document.querySelectorAll(".operations__tab");
+const tabsContainer = document.querySelector(".operations__tab-container");
+const tabsContent = document.querySelectorAll(".operations__content");
+
+tabsContainer.addEventListener("click", function (e) {
+  const clicked = e.target.closest(".operations__tab");
+
+  ///////   GUARD CLAUSE
+  if (!clicked) return;
+
+
+////// REMOVE ACTIVE CLASSES
+  tabs.forEach((t) => t.classList.remove("operations__tab--active"));
+  tabsContent.forEach((c) => c.classList.remove("operations__tab--active"));
+
+
+
+  /////    ACTIVATE TAB
+  clicked.classList.add("operations__tab--active");
+
+
+  //// ACTIVE CONTENT AREA
+  document
+    .querySelector(`.operations__content--${clicked.dataset.tab}`)
+    .classList.add("operations__content--active");
 });
