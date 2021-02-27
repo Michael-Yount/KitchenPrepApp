@@ -13,6 +13,10 @@
   &__tab {
     margin-right: 2.5rem;
     transform: translateY(-50%);
+
+    @include respond(phone) {
+        margin: 0;
+    }
   }
 
   &__tab span {
@@ -100,7 +104,7 @@
   }
 
   @include respond(phone) {
-    margin-right: 0.5rem;
+    
     max-width: fit-content;
   }
 }

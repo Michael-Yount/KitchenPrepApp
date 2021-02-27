@@ -208,7 +208,7 @@ body {
       right: 4rem; } }
   @media (max-width: 37.5em) {
     .daily-prep-list__button {
-      right: 8rem;
+      right: 4rem;
       top: 1.5rem; } }
 
 .daily-prep-list__button--label {
@@ -227,7 +227,7 @@ body {
   @media (max-width: 37.5em) {
     .daily-prep-list__button--label {
       display: none;
-      right: 9rem;
+      right: 4rem;
       top: 2rem; } }
 
 .daily-prep-list__background {
@@ -243,7 +243,7 @@ body {
   @media (max-width: 56.25em) {
     .daily-prep-list__background {
       top: 2rem;
-      right: 8rem; } }
+      right: 4rem; } }
 
 .daily-prep-list__nav {
   height: 100vh;
@@ -706,6 +706,9 @@ body {
   .operations__tab {
     margin-right: 2.5rem;
     transform: translateY(-50%); }
+    @media (max-width: 37.5em) {
+      .operations__tab {
+        margin: 0; } }
   .operations__tab span {
     margin-right: 1rem;
     font-weight: 600;
@@ -761,5 +764,4 @@ body {
     fill: var(--color-tertiary); }
   @media (max-width: 37.5em) {
     .operations {
-      margin-right: 0.5rem;
       max-width: fit-content; } }
