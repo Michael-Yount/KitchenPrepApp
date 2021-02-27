@@ -22,11 +22,11 @@
   }
 
   &__tab--1 {
-    background-color:$color-background-main;
+    background-color: $color-background-main;
   }
 
   &__tab--1:hover {
-    background-color:$text-color-main;
+    background-color: $text-color-main;
   }
 
   &__tab--3 {
@@ -97,5 +97,10 @@
   }
   &__icon--3 svg {
     fill: var(--color-tertiary);
+  }
+
+  @include respond(phone) {
+    margin-right: 0.5rem;
+    max-width: fit-content;
   }
 }

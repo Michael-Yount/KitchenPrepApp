@@ -22,6 +22,15 @@
         top: 2rem;
         right: 4rem;
       }
+      @include respond(phone) {
+      // display: none;
+      // letter-spacing: none;
+      // font-size: 1.2rem;
+      right: 8rem;
+      top: 1.5rem;
+      // box-shadow: none;
+      // color: $color-white;
+    }
   }
   &__button--label {
     position: fixed;
@@ -46,8 +55,8 @@
       display: none;
       // letter-spacing: none;
       // font-size: 1.2rem;
-      // right: 7rem;
-      // top: 2rem;
+      right: 9rem;
+      top: 2rem;
       // box-shadow: none;
       // color: $color-white;
     }
@@ -69,7 +78,7 @@
 
     @include respond(tab-port) {
         top: 2rem;
-        right: 4rem;
+        right: 8rem;
       }
   }
 
