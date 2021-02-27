@@ -3,6 +3,7 @@
   margin: 12rem auto 0 auto;
 
   background-color: #fff;
+  box-shadow: $box-shadow-dark;
 
   &__tab-container {
     display: flex;
@@ -21,11 +22,11 @@
   }
 
   &__tab--1 {
-    background-color: var(--color-secondary);
+    background-color:$color-background-main;
   }
 
   &__tab--1:hover {
-    background-color: var(--color-secondary-darker);
+    background-color:$text-color-main;
   }
 
   &__tab--3 {
@@ -46,7 +47,7 @@
 
     /* JUST PRESENTATIONAL */
     font-size: 1.7rem;
-    padding: 2.5rem 7rem 6.5rem 7rem;
+    padding: 1.5rem 7rem 6.5rem 7rem;
   }
 
   &__content--active {
