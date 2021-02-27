@@ -1,8 +1,8 @@
-.section-start {
+.section {
   position: relative;
   background-color: rgba(95, 179, 218, 0.383);
   margin-top: -1rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   padding: 5rem; }
 
 *,
@@ -89,6 +89,10 @@ body {
       font-size: 2rem;
       line-height: 2rem;
       padding: 0%; } }
+
+.section-title {
+  display: flex;
+  text-align: center; }
 
 .u-center-text {
   text-align: center !important; }
