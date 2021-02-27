@@ -422,7 +422,8 @@ body {
   box-shadow: 0.5rem 0.5rem 2rem #c0aeae; }
   @media (max-width: 37.5em) {
     .btn, .btn:link, .btn:visited {
-      width: fit-content; } }
+      width: fit-content;
+      margin: none; } }
 
 .btn:hover {
   transform: translateY(-0.3rem);
@@ -572,7 +573,8 @@ body {
   box-shadow: 0.5rem 0.5rem 2rem #c0aeae; }
   @media (max-width: 37.5em) {
     .btn, .btn:link, .btn:visited {
-      width: fit-content; } }
+      width: fit-content;
+      margin: none; } }
 
 .btn:hover {
   transform: translateY(-0.3rem);

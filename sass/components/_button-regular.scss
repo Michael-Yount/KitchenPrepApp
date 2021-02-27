@@ -19,6 +19,8 @@
 
     @include respond(phone) {
       width: fit-content;
+      margin: none;
+
 
 
     }
