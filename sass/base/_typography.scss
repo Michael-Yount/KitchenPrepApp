@@ -41,11 +41,12 @@ body {
 .heading-secondary {
   // display: inline-block;
   padding: 3rem;
-  color: $color-secondary;
+  color: $text-color-main;
   text-transform: uppercase;
   backface-visibility: hidden;
   -webkit-background-clip: text;
   letter-spacing: 1rem;
+  text-shadow: $text-shadow-dark;
 
    @include respond(tab-port) {
       letter-spacing: 0.5rem;

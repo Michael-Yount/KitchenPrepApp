@@ -84,11 +84,12 @@ body {
 
 .heading-secondary {
   padding: 3rem;
-  color: #27424b;
+  color: #f0f7fa;
   text-transform: uppercase;
   backface-visibility: hidden;
   -webkit-background-clip: text;
-  letter-spacing: 1rem; }
+  letter-spacing: 1rem;
+  text-shadow: 0.3rem 0.3rem 0.45rem #181616; }
   @media (max-width: 56.25em) {
     .heading-secondary {
       letter-spacing: 0.5rem;
