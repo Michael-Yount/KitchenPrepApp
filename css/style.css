@@ -424,7 +424,8 @@ body {
   @media (max-width: 37.5em) {
     .btn, .btn:link, .btn:visited {
       width: fit-content;
-      margin: none; } }
+      margin: none;
+      font-size: 1rem; } }
 
 .btn:hover {
   transform: translateY(-0.3rem);
@@ -575,7 +576,8 @@ body {
   @media (max-width: 37.5em) {
     .btn, .btn:link, .btn:visited {
       width: fit-content;
-      margin: none; } }
+      margin: none;
+      font-size: 1rem; } }
 
 .btn:hover {
   transform: translateY(-0.3rem);

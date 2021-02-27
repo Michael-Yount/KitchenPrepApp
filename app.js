@@ -94,8 +94,8 @@ tabsContainer.addEventListener("click", function (e) {
 
 
 ////// REMOVE ACTIVE CLASSES
-  tabs.forEach((t) => t.classList.remove("operations__tab--active"));
-  tabsContent.forEach((c) => c.classList.remove("operations__tab--active"));
+  tabs.forEach(t => t.classList.remove("operations__tab--active"));
+  tabsContent.forEach(c => c.classList.remove("operations__content--active"));
 
 
 
@@ -104,9 +104,11 @@ tabsContainer.addEventListener("click", function (e) {
 
 
   //// ACTIVE CONTENT AREA
+
+  console.log(clicked.dataset.tab);
   document
     .querySelector(`.operations__content--${clicked.dataset.tab}`)
-    .classList.add("operations__content--active");
+    .classList.add('operations__content--active');
 });
 
 //// MENU FADE ANIMATION
