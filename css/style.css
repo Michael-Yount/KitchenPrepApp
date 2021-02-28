@@ -355,8 +355,8 @@ body {
   flex-direction: column;
   width: 50%;
   height: 50%;
-  left: 25rem;
-  top: 3rem;
+  left: 20rem;
+  top: 6rem;
   z-index: 200; }
   @media (max-width: 37.5em) {
     .icon {
@@ -425,7 +425,7 @@ body {
     .btn, .btn:link, .btn:visited {
       width: fit-content;
       margin: none;
-      font-size: 1rem; } }
+      font-size: 2rem; } }
 
 .btn:hover {
   transform: translateY(-0.3rem);
@@ -577,7 +577,7 @@ body {
     .btn, .btn:link, .btn:visited {
       width: fit-content;
       margin: none;
-      font-size: 1rem; } }
+      font-size: 2rem; } }
 
 .btn:hover {
   transform: translateY(-0.3rem);
@@ -701,7 +701,8 @@ body {
   max-width: 100rem;
   margin: 12rem auto 0 auto;
   background-color: #fff;
-  box-shadow: 0.5rem 0.5rem 2rem #1b1b1b; }
+  box-shadow: 0.5rem 0.5rem 2rem #1b1b1b;
+  border-radius: 3rem; }
   .operations__tab-container {
     display: flex;
     justify-content: center; }
@@ -718,14 +719,22 @@ body {
   .operations__tab--1 {
     background-color: #6b8486; }
   .operations__tab--1:hover {
-    background-color: #f0f7fa; }
+    background-color: rgba(54, 223, 54, 0.383); }
+  .operations__tab--2 {
+    background-color: #6b8486; }
+  .operations__tab--2:hover {
+    background-color: rgba(54, 223, 54, 0.383); }
   .operations__tab--3 {
-    background-color: var(--color-tertiary);
-    margin: 0; }
+    background-color: #6b8486; }
   .operations__tab--3:hover {
-    background-color: var(--color-tertiary-darker); }
+    background-color: rgba(54, 223, 54, 0.383); }
+  .operations__tab--4 {
+    background-color: #6b8486; }
+  .operations__tab--4:hover {
+    background-color: rgba(54, 223, 54, 0.383); }
   .operations__tab--active {
-    transform: translateY(-66%); }
+    transform: translateY(-66%);
+    background-color: rgba(255, 234, 43, 0.246); }
   .operations__content {
     display: none;
     /* JUST PRESENTATIONAL */
@@ -735,7 +744,9 @@ body {
     display: grid;
     grid-template-columns: 7rem 1fr;
     column-gap: 3rem;
-    row-gap: 0.5rem; }
+    row-gap: 0.5rem;
+    background-color: rgba(255, 234, 43, 0.246);
+    border-radius: 3rem; }
   .operations__header {
     font-size: 2.25rem;
     font-weight: 500;
@@ -752,10 +763,6 @@ body {
   .operations__icon svg {
     height: 2.75rem;
     width: 2.75rem; }
-  .operations__icon--1 {
-    background-color: var(--color-secondary-opacity); }
-  .operations__icon--2 {
-    background-color: var(--color-primary-opacity); }
   .operations__icon--3 {
     background-color: var(--color-tertiary-opacity); }
   .operations__icon--1 svg {
