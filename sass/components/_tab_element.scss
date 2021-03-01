@@ -4,15 +4,11 @@
 
   background-color: #fff;
   box-shadow: $box-shadow-dark;
-    border-radius: 3rem;
-
+  border-radius: 2rem;
 
   &__tab-container {
     display: flex;
     justify-content: center;
-
-    
-
   }
 
   &__tab {
@@ -51,7 +47,7 @@
   }
 
   &__tab--3:hover {
-    background-color:$transparent-green-glass;
+    background-color: $transparent-green-glass;
   }
 
   &__tab--4 {
@@ -59,7 +55,7 @@
   }
 
   &__tab--4:hover {
-    background-color:$transparent-green-glass;
+    background-color: $transparent-green-glass;
   }
 
   &__tab--active {
@@ -80,17 +76,15 @@
     grid-template-columns: 7rem 1fr;
     column-gap: 3rem;
     row-gap: 0.5rem;
-    background-color:$transparent-gold-glass;
+    background-color: $transparent-gold-glass;
 
-    border-radius: 3rem;
-
+    border-radius: 2rem;
   }
 
   &__header {
     font-size: 2.25rem;
     font-weight: 500;
     align-self: center;
-
   }
 
   &__icon {
@@ -111,10 +105,8 @@
   }
 
   &__icon--1 {
-    
   }
   &__icon--2 {
-
   }
   &__icon--3 {
     background-color: var(--color-tertiary-opacity);

@@ -66,14 +66,14 @@ const foodCostPercent = document.querySelector(".foodCost__output");
 /////////////  ADD EVENT LISTEner
 submitButton.addEventListener("click", function (e) {
   // THIS PROCESSES TO FOOD COST PERCENT
+  const invTotal = Number(inventoryStart.value) + Number(purchases.value);
+  const invMinusWeek = invTotal - Number(inventoryEnd.value);
+  const amount =  invMinusWeek / Number(totalSales.value); 
+    
 
-  const amount =
-    Number(inventoryStart.value) +
-    Number(purchases.value) -
-    Number(inventoryEnd.value) / Number(totalSales.value);
+  foodCostPercent.textContent = Math.abs(`${amount}`);
 
-  foodCostPercent.textContent = Math.floor(`${amount}`);
-
+  console.log(invTotal);
   console.log(`Submit button pressed ${amount}`);
   e.preventDefault();
 });
@@ -92,23 +92,19 @@ tabsContainer.addEventListener("click", function (e) {
   ///////   GUARD CLAUSE
   if (!clicked) return;
 
-
-////// REMOVE ACTIVE CLASSES
-  tabs.forEach(t => t.classList.remove("operations__tab--active"));
-  tabsContent.forEach(c => c.classList.remove("operations__content--active"));
-
-
+  ////// REMOVE ACTIVE CLASSES
+  tabs.forEach((t) => t.classList.remove("operations__tab--active"));
+  tabsContent.forEach((c) => c.classList.remove("operations__content--active"));
 
   /////    ACTIVATE TAB
   clicked.classList.add("operations__tab--active");
-
 
   //// ACTIVE CONTENT AREA
 
   console.log(clicked.dataset.tab);
   document
     .querySelector(`.operations__content--${clicked.dataset.tab}`)
-    .classList.add('operations__content--active');
+    .classList.add("operations__content--active");
 });
 
 //// MENU FADE ANIMATION
