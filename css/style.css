@@ -533,7 +533,8 @@ body {
     @media (max-width: 37.5em) {
       .modal__body {
         line-height: 2rem;
-        padding: 0%; } }
+        padding: 2rem;
+        font-size: 2rem; } }
 
 .hidden {
   display: none; }

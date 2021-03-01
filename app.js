@@ -68,10 +68,9 @@ submitButton.addEventListener("click", function (e) {
   // THIS PROCESSES TO FOOD COST PERCENT
   const invTotal = Number(inventoryStart.value) + Number(purchases.value);
   const invMinusWeek = invTotal - Number(inventoryEnd.value);
-  const amount =  invMinusWeek / Number(totalSales.value); 
-    
+  const amount = invMinusWeek / Number(totalSales.value);
 
-  foodCostPercent.textContent = Math.abs(`${amount}`);
+  foodCostPercent.textContent = Math.abs(`${amount}`).toPrecision(2);
 
   console.log(invTotal);
   console.log(`Submit button pressed ${amount}`);

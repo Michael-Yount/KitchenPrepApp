@@ -27,6 +27,7 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid $color-white;
+
   }
 
   &__title {
@@ -54,7 +55,8 @@
 
     @include respond(phone) {
       line-height: 2rem;
-      padding: 0%;
+      padding: 2rem;
+      font-size: 2rem;
     }
   }
 
