@@ -12,7 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" href="/referenceLibrary/logos/kitchenPrepAppFavicon.ico" />
+    <link rel="icon" href="/KitchenPrepApp/referenceLibrary/logos/kitchenPrepAppFavicon.ico" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Kitchen Prep App</title>
   </head>
@@ -30,7 +30,7 @@
         id="daily-toggle"
       />
       <label for="daily-toggle" class="daily-prep-list__button">
-        <!--  -->
+      
         <span class="daily-prep-list__icon"></span>
       </label>
       <div class="daily-prep-list__background">&nbsp;</div>
@@ -92,17 +92,17 @@
 
     <div class="icon">
       <img
-        src="/referenceLibrary/images/broccoliSilou.png"
+        src="/KitchenPrepApp/referenceLibrary/images/broccoliSilou.png"
         alt=""
         class="icon__broccoli"
       />
       <img
-        src="/referenceLibrary/images/knife.png"
+        src="/KitchenPrepApp/referenceLibrary/images/knife.png"
         alt=""
         class="icon__knife"
       />
       <img
-        src="/referenceLibrary/images/onion.png"
+        src="/KitchenPrepApp/referenceLibrary/images/onion.png"
         alt=""
         class="icon__onion"
       />
@@ -111,7 +111,7 @@
     <header class="header">
       <div class="header__logo-box">
         <img
-          src="/referenceLibrary/logos/KPALOGO.png"
+          src="/KitchenPrepApp/referenceLibrary/logos/KPALOGO.png"
           alt="kitchenPrepLogo"
           class="header__logo"
         />
@@ -178,7 +178,7 @@
         <div class="operations__content operations__content--2">
           <div class="operations__icon operations__icon--2">
             <svg>
-              <use xlink:href="/referenceLibrary/images/knife.png"></use>
+              <use xlink:href="/KitchenPrepApp/referenceLibrary/logos/KPALOGO.png"></use>
             </svg>
           </div>
           <h5 class="operations__header">
@@ -227,6 +227,56 @@
         <h2 class="section__title heading-secondary">Quick Reference</h2>
       </div>
       <nav class="section-start__nav">
+
+                <button
+          data-modal-target="#recipes"
+          href="#"
+          class="section-start-button btn btn--animated btn--glass"
+        >
+          Recipes
+        </button>
+
+        <div class="modal hidden" id="recipes">
+          <div class="modal__header">
+            <div class="modal__title">Recipes</div>
+            <button
+              data-close-modal-target="recipes"
+              class="modal__close-button"
+            >
+              &times;
+            </button>
+          </div>
+          <div class="modal__body">
+            This area will contain your company(or personal) recipes. this will
+            also include a scale up or down tool for events or parties.
+          </div>
+        </div>
+
+        <button
+          data-modal-target="#conversions"
+          href="#"
+          class="section-start-button btn btn--glass btn--animated"
+        >
+          conversions
+        </button>
+
+        <div class="modal hidden" id="conversions">
+          <div class="modal__header">
+            <div class="modal__title">Conversions</div>
+            <button
+              data-close-modal-target="conversions"
+              class="modal__close-button"
+            >
+              &times;
+            </button>
+          </div>
+          <div class="modal__body">
+            This is where I will put a american to metric or vice versa
+            conversion calculator, I will also implement a bakers percentage aas
+            well as other useful conversions.
+          </div>
+        </div>
+
         <button
           href="#"
           data-modal-target="#foodCost"
@@ -344,54 +394,7 @@
           </div>
         </div>
 
-        <button
-          data-modal-target="#recipes"
-          href="#"
-          class="section-start-button btn btn--animated btn--glass"
-        >
-          Recipes
-        </button>
 
-        <div class="modal hidden" id="recipes">
-          <div class="modal__header">
-            <div class="modal__title">Recipes</div>
-            <button
-              data-close-modal-target="recipes"
-              class="modal__close-button"
-            >
-              &times;
-            </button>
-          </div>
-          <div class="modal__body">
-            This area will contain your company(or personal) recipes. this will
-            also include a scale up or down tool for events or parties.
-          </div>
-        </div>
-
-        <button
-          data-modal-target="#conversions"
-          href="#"
-          class="section-start-button btn btn--glass btn--animated"
-        >
-          conversions
-        </button>
-
-        <div class="modal hidden" id="conversions">
-          <div class="modal__header">
-            <div class="modal__title">Conversions</div>
-            <button
-              data-close-modal-target="conversions"
-              class="modal__close-button"
-            >
-              &times;
-            </button>
-          </div>
-          <div class="modal__body">
-            This is where I will put a american to metric or vice versa
-            conversion calculator, I will also implement a bakers percentage aas
-            well as other useful conversions.
-          </div>
-        </div>
 
         <!-- <a href="#" class="section-start--link">Labor Cost</a> -->
       </nav>
