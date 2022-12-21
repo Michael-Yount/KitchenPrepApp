@@ -109,3 +109,14 @@ tabsContainer.addEventListener("click", function (e) {
 //// MENU FADE ANIMATION
 
 // const nav = document.querySelector('.nav')
+
+// This is the code for the recipes section
+const recipeContainer = document.querySelector(".recipe");
+
+const timeout = function (s) {
+  return new Promise(function (_, reject) {
+    setTimeout(function () {
+      reject(new Error(`Request took too long! Timeout after ${s} second`));
+    }, s * 1000);
+  });
+};
