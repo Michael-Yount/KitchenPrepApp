@@ -44,22 +44,19 @@ body {
   color: $text-color-main;
   text-transform: uppercase;
   backface-visibility: hidden;
-  -webkit-background-clip: text;
+  //-webkit-background-clip: text;
   letter-spacing: 1rem;
   text-shadow: $text-shadow-dark;
 
-   @include respond(tab-port) {
-      letter-spacing: 0.5rem;
-      font-size: 2rem;
-      line-height: 2rem;
-      padding: 0%;
-}
+  @include respond(tab-port) {
+    letter-spacing: 0.5rem;
+    font-size: 2rem;
+    line-height: 2rem;
+    padding: 0%;
+  }
 }
 
 .section-title {
-
   display: flex;
   text-align: center;
 }
-
-
