@@ -44,7 +44,7 @@ body {
   color: $text-color-main;
   text-transform: uppercase;
   backface-visibility: hidden;
-  //-webkit-background-clip: text;
+  -webkit-background-clip: text;
   letter-spacing: 1rem;
   text-shadow: $text-shadow-dark;
 
