@@ -245,6 +245,7 @@ const showRecipe = async function () {
           </a>
         </div>
     `;
+    recipeContainer.insertAdjacentHTML("afterbegin", markup);
   } catch (err) {
     alert(err);
   }
