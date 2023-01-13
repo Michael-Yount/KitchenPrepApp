@@ -136,7 +136,7 @@ const showRecipe = async function () {
 
     if (!res.ok) throw new Error(`${data.message} (${res.status})`);
 
-    let recipe = data.data;
+    let { recipe } = data.data;
     recipe = {
       id: recipe.id,
       title: recipe.title,
@@ -147,7 +147,7 @@ const showRecipe = async function () {
       cookingTime: recipe.cooking_time,
       ingredients: recipe.ingredients,
     };
-    console.log(res, data);
+    console.log(recipe);
   } catch (err) {
     alert(err);
   }
