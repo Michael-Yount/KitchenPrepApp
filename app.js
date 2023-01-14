@@ -1,4 +1,7 @@
 "use strict";
+//this is an npm package
+import "core-js/stable";
+import "regenerator-runtime/runtime";
 
 // Variables
 // THIS IS THE BUTTON FUNCTIONALITY FOR THE MODAL
@@ -141,6 +144,7 @@ const showRecipe = async function () {
   try {
     //1 loading recipe , spinner
     renderSpinner(recipeContainer);
+
     const res = await fetch(
       //"https://forkify-api.herokuapp.com/api/v2/recipes/5ed6604691c37cdc054bd034",
       //https://forkify-api.herokuapp.com/api/v2/recipes/:id)
