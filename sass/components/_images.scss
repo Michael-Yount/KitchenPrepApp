@@ -43,7 +43,7 @@
     animation-fill-mode: forwards;
 
     @include respond(phone) {
-      left:0;
+      left: 0;
       // top: rem;
       width: 40%;
       // margin: 3rem;
@@ -68,5 +68,23 @@
       // margin: 3rem;
       // left: rem;
     }
+  }
+}
+
+.spinner svg {
+  position: relative;
+
+  display: flex;
+
+  width: 50%;
+  height: 50%;
+  left: 20rem;
+  top: 6rem;
+  z-index: 200;
+  animation: rotate 2s infinite linear;
+
+  @include respond(phone) {
+    left: 5rem;
+    top: 10rem;
   }
 }
