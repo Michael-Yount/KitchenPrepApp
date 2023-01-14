@@ -1,7 +1,7 @@
 "use strict";
 //this is an npm package
-import "core-js/stable";
-import "regenerator-runtime/runtime";
+//import "core-js/stable";
+//import "regenerator-runtime/runtime";
 
 // Variables
 // THIS IS THE BUTTON FUNCTIONALITY FOR THE MODAL
