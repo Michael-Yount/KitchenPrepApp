@@ -125,6 +125,18 @@ const timeout = function (s) {
 /////////////  API   ////////////////////////
 ///////////////////////////////////////////
 
+const renderSpinner = function (parentEl) {
+  const markup = `
+  <div class="spinner">
+          <svg>
+            <use href="../KitchenPrepApp/referenceLibrary/images/stoveKnob.png"></use>
+          </svg>
+        </div>
+  `;
+
+  parentEl.insertAdjacentHTML("afterbegin", markup);
+};
+
 const showRecipe = async function () {
   try {
     const res = await fetch(
