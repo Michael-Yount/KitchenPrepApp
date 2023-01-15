@@ -3,7 +3,7 @@
   &:link,
   &:visited {
     font-size: 2rem;
-    
+
     text-transform: uppercase;
     text-decoration: none;
     padding: 1.5rem 2rem;
@@ -21,28 +21,24 @@
       width: fit-content;
       margin: none;
       font-size: 2rem;
-
-
-
     }
-  
 
     //change for the button
     border: none;
     cursor: pointer;
 
-      margin: 2rem;
-      color: $button-text-color-dark;
+    margin: 2rem;
+    color: $button-text-color-dark;
 
-      border-bottom: 2px solid $color-white;
+    border-bottom: 2px solid $color-white;
 
-      background-image: linear-gradient(
-        to bottom,
-        $transparent-whiteDull-glass,
-        $transparent-whiteBrite-glass
-      );
+    background-image: linear-gradient(
+      to bottom,
+      $transparent-whiteDull-glass,
+      $transparent-whiteBrite-glass
+    );
 
-      box-shadow: $box-shadow-light;
+    box-shadow: $box-shadow-light;
   }
   &:hover {
     transform: translateY(-0.3rem);
@@ -62,15 +58,15 @@
   }
 
   &--glass {
-       background-image: linear-gradient(
-         to bottom,
-         $transparent-whiteDull-glass,
-         $transparent-whiteBrite-glass
-       );
+    background-image: linear-gradient(
+      to bottom,
+      $transparent-whiteDull-glass,
+      $transparent-whiteBrite-glass
+    );
 
-       &::after {
-            background-color: $color-white;
-       }
+    &::after {
+      background-color: $color-white;
+    }
   }
 
   &--white {
@@ -96,7 +92,7 @@
     display: inline-block;
     height: 100%;
     width: 100%;
-    border-radius: 10rem;
+    border-radius: 2rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -110,11 +106,9 @@
   }
 
   &--show-modal {
-
   }
 
   &__tag {
-
   }
 }
 
