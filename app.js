@@ -1,6 +1,6 @@
 "use strict";
 //this is an npm package
-import icons from "url:../KitchenPrepApp/referenceLibrary/images";
+import icons from "../KitchenPrepApp/referenceLibrary/images";
 console.log(icons);
 //import "core-js/stable";
 //import "regenerator-runtime/runtime";
