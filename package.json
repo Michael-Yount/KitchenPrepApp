@@ -1,22 +1,27 @@
 {
   "name": "kitchenprepapp",
-  "version": "1.0.0",
-  "description": "a kitchen team building app.",
-  "main": "index.html",
+  "version": "1.2.1",
+  "description": "this is a restarted version of the original was comprimised.",
+  "main": "app.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cheshirekatsmile101/KitchenPrepApp.git"
+    "url": "git+https://github.com/Michael-Yount/KitchenPrepApp.git"
   },
-  "author": "michaelAYount",
+  "author": "Michael Yount",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cheshirekatsmile101/KitchenPrepApp/issues"
+    "url": "https://github.com/Michael-Yount/KitchenPrepApp/issues"
   },
-  "homepage": "https://github.com/cheshirekatsmile101/KitchenPrepApp#readme",
+  "homepage": "https://github.com/Michael-Yount/KitchenPrepApp#readme",
   "devDependencies": {
-    "node-sass": "^5.0.0"
+    "parcel": "^2.8.2"
+  },
+  "dependencies": {
+    "sass": "^1.57.1"
   }
 }
