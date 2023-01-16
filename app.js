@@ -1,7 +1,7 @@
 "use strict";
 //this is an npm package
-import icons from "../KitchenPrepApp/referenceLibrary/images";
-console.log(icons);
+//import icons from "../KitchenPrepApp/referenceLibrary/images";
+//console.log(icons);
 //import "core-js/stable";
 //import "regenerator-runtime/runtime";
 
@@ -144,11 +144,12 @@ const renderSpinner = function (parentEl) {
 
 const showRecipe = async function () {
   try {
+    const id = window.location.hash.slice(1);
     //1 loading recipe , spinner
     renderSpinner(recipeContainer);
 
     const res = await fetch(
-      "https://forkify-api.herokuapp.com/api/v2/recipes/5ed6604691c37cdc054bd034"
+      "https://forkify-api.herokuapp.com/api/v2/recipes/${id}"
       //https://forkify-api.herokuapp.com/api/v2/recipes/:id)
       //"https://forkify-api.herokuapp.com/api/v2/recipes/5ed6604591c37cdc054bc886"
     );
@@ -285,4 +286,7 @@ const showRecipe = async function () {
     alert(err);
   }
 };
-showRecipe();
+["hashchange", "load"].forEach((e) => window.addEventListener(ev, showRecipe));
+
+//window.addEventListener("hashChange", showRecipe);
+//window.addEventListener("load", showRecipe);
