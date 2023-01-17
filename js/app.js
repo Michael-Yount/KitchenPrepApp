@@ -5,7 +5,7 @@ import recipeView from "./views/recipeView.js";
 //this is an npm package
 //import icons from "../KitchenPrepApp/referenceLibrary/images";
 //console.log(icons);
-import "core-js/stable";
+//import "core-js/stable";
 import "regenerator-runtime/runtime";
 
 // Variables
