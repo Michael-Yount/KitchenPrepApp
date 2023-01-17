@@ -156,9 +156,6 @@ const showRecipe = async function () {
     await model.loadRecipe(id);
     // rendering the recipe
     recipeView.render(model.state.recipe);
-
-    const markup = (recipeContainer.innerHTML = "");
-    recipeContainer.insertAdjacentHTML("afterbegin", markup);
   } catch (err) {
     alert(err);
   }
