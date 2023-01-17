@@ -1,3 +1,5 @@
+"use strict";
+
 //import * as model from "./model";
 //import recipeView from "./views/recipeView.js";
 //this is an npm package
