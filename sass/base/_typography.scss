@@ -13,7 +13,7 @@ body {
   text-shadow: $text-shadow-dark;
   backface-visibility: hidden;
   margin-bottom: 4rem;
-  -webkit-background-clip: text;
+  //-webkit-background-clip: text;
   letter-spacing: 1.5rem;
   line-height: 8rem;
 
@@ -44,7 +44,7 @@ body {
   color: $text-color-main;
   text-transform: uppercase;
   backface-visibility: hidden;
-  -webkit-background-clip: text;
+  //-webkit-background-clip: text;
   letter-spacing: 1rem;
   text-shadow: $text-shadow-dark;
 
