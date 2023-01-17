@@ -1,4 +1,4 @@
-import { async } from "regenerator-runtime";
+//import { async } from "regenerator-runtime";
 import { API_URL } from "../js/config.js";
 import { getJSON } from "../js/helpers.js";
 export const state = {
@@ -22,6 +22,6 @@ export const loadRecipe = async function (id) {
     };
     console.log(state.recipe);
   } catch (err) {
-    alert(err);
+    throw err;
   }
 };
