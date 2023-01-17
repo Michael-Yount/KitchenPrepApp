@@ -133,24 +133,12 @@ const timeout = function (s) {
 /////////////  API   ////////////////////////
 ///////////////////////////////////////////
 
-const renderSpinner = function (parentEl) {
-  const markup = `
-  <div class="spinner">
-          <svg>
-            <use href="../KitchenPrepApp/referenceLibrary/images/stoveKnob.png"></use>
-          </svg>
-        </div>
-  `;
-  parentEl.innerHTML = "";
-  parentEl.insertAdjacentHTML("afterbegin", markup);
-};
-
-const showRecipe = async function () {
+const controlRecipes = async function () {
   try {
     const id = window.location.hash.slice(1);
 
     if (!id) return;
-    renderSpinner(recipeContainer);
+    recipeView.renderSpinner();
 
     //1 loading recipe , spinner
     await model.loadRecipe(id);
@@ -160,7 +148,9 @@ const showRecipe = async function () {
     alert(err);
   }
 };
-["hashchange", "load"].forEach((ev) => window.addEventListener(ev, showRecipe));
+["hashchange", "load"].forEach((ev) =>
+  window.addEventListener(ev, controlRecipes)
+);
 
 //window.addEventListener("hashChange", showRecipe);
 //window.addEventListener("load", showRecipe);

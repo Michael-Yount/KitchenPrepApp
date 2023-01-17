@@ -14,6 +14,18 @@ class RecipeView {
     this.#parentElement.innerHTML = "";
   }
 
+  renderSpinner = function () {
+    const markup = `
+  <div class="spinner">
+          <svg>
+            <use href="../../referenceLibrary/images/stoveKnob.png"></use>
+          </svg>
+        </div>
+  `;
+    this.#parentElement.innerHTML = "";
+    this.#parentElement.insertAdjacentHTML("afterbegin", markup);
+  };
+
   #generateMarkup() {
     return `<figure class="recipe__fig">
           <img src="${this.#data.img}" alt="${
