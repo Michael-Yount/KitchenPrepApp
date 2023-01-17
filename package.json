@@ -2,7 +2,7 @@
   "name": "kitchenprepapp",
   "version": "1.2.1",
   "description": "this is a restarted version of the original was comprimised.",
-  "main": "app.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel index.html",
