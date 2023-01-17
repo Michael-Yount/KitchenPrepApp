@@ -116,7 +116,7 @@ tabsContainer.addEventListener("click", function (e) {
 
 //// MENU FADE ANIMATION
 
-// const nav = document.querySelector('.nav')
+const nav = document.querySelector(".nav");
 
 // This is the code for the recipes section
 //const recipeContainer = document.querySelector(".recipe");
