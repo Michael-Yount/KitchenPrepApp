@@ -1,6 +1,7 @@
 "use strict";
 
 import * as model from "./model";
+import recipeView from "./views/recipeView.js";
 //this is an npm package
 //import icons from "../KitchenPrepApp/referenceLibrary/images";
 //console.log(icons);
@@ -155,6 +156,7 @@ const showRecipe = async function () {
     await model.loadRecipe(id);
     const { recipe } = model.state;
     // rendering the recipe
+    recipeView.render(model.state.recipe);
 
     const markup = `<figure class="recipe__fig">
           <img src="${recipe.img}" alt="${recipe.title}" class="recipe__img" />
