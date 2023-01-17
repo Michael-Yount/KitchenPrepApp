@@ -17,7 +17,6 @@
 
     @include respond(phone) {
       margin: 0;
-      
     }
   }
 
@@ -106,8 +105,10 @@
   }
 
   &__icon--1 {
+    background-color: var(--color-tertiary-opacity);
   }
   &__icon--2 {
+    background-color: var(--color-tertiary-opacity);
   }
   &__icon--3 {
     background-color: var(--color-tertiary-opacity);
