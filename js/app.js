@@ -121,14 +121,6 @@ tabsContainer.addEventListener("click", function (e) {
 // This is the code for the recipes section
 const recipeContainer = document.querySelector(".recipe");
 
-const timeout = function (s) {
-  return new Promise(function (_, reject) {
-    setTimeout(function () {
-      reject(new Error(`Request took too long! Timeout after ${s} second`));
-    }, s * 1000);
-  });
-};
-
 //////////////////////////////////////////////
 /////////////  API   ////////////////////////
 ///////////////////////////////////////////
@@ -148,9 +140,8 @@ const controlRecipes = async function () {
     alert(err);
   }
 };
-["hashchange", "load"].forEach((ev) =>
-  window.addEventListener(ev, controlRecipes)
-);
 
-//window.addEventListener("hashChange", showRecipe);
-//window.addEventListener("load", showRecipe);
+const init = function () {
+  recipeView.addHandlerRender(controlRecipes);
+};
+init();
