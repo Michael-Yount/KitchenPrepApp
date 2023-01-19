@@ -1,12 +1,12 @@
 "use strict";
 
-import model from "./model";
-import recipeView from "./views/recipeView.js";
+import * as model from "./js/model";
+import recipeView from "";
 //this is an npm package
 //import icons from "../KitchenPrepApp/referenceLibrary/images";
 
-import "core-js/stable";
-import "regenerator-runtime/runtime";
+//import "core-js/stable";
+//import "regenerator-runtime/runtime";
 
 // Variables
 // THIS IS THE BUTTON FUNCTIONALITY FOR THE MODAL
