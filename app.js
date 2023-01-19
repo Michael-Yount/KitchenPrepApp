@@ -1,7 +1,7 @@
 "use strict";
 
-import * as model from "./js/model";
-import recipeView from "";
+//import * as model from "./js/model";
+//import recipeView from "./js/views/recipeView.js";
 //this is an npm package
 //import icons from "../KitchenPrepApp/referenceLibrary/images";
 
@@ -116,7 +116,7 @@ tabsContainer.addEventListener("click", function (e) {
 
 //// MENU FADE ANIMATION
 
-const nav = document.querySelector(".nav");
+//const nav = document.querySelector(".nav");
 
 // This is the code for the recipes section
 
