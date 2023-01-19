@@ -125,7 +125,7 @@ tabsContainer.addEventListener("click", function (e) {
 /////////////  API   ////////////////////////
 ///////////////////////////////////////////
 
-/*const controlRecipes = async function () {
+const controlRecipes = async function () {
   try {
     const id = window.location.hash.slice(1);
 
@@ -144,4 +144,4 @@ tabsContainer.addEventListener("click", function (e) {
 const init = function () {
   recipeView.addHandlerRender(controlRecipes);
 };
-init();*/
+init();
