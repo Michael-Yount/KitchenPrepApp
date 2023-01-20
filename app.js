@@ -1,10 +1,12 @@
 "use strict";
 
-//import * as model from "./js/model.js";
-//import recipeView from "./js/views/recipeView.js";
-
-//import "core-js/stable";
-//import "regenerator-runtime/runtime";
+import * as model from "./js/model.js";
+import recipeView from "./js/views/recipeView.js";
+import searchView from "./js/views/searchView.js";
+import resultsView from "./js/views/resultsView.js";
+//import "./core-js/stable";
+//import "./regenerator-runtime/runtime";
+//import { async } from "regenerator-runtime";
 
 // Variables
 // THIS IS THE BUTTON FUNCTIONALITY FOR THE MODAL
@@ -124,7 +126,7 @@ tabsContainer.addEventListener("click", function (e) {
 /////////////Recipe  API   ////////////////////////
 ///////////////////////////////////////////
 
-/*const controlRecipes = async function () {
+const controlRecipes = async function () {
   try {
     const id = window.location.hash.slice(1);
 
@@ -133,6 +135,7 @@ tabsContainer.addEventListener("click", function (e) {
 
     //1 loading recipe , spinner
     await model.loadRecipe(id);
+
     // rendering the recipe
     recipeView.render(model.state.recipe);
   } catch (err) {
@@ -140,7 +143,22 @@ tabsContainer.addEventListener("click", function (e) {
   }
 };
 
+const controlSearchResults = async function () {
+  try {
+    recipeView.renderSpinner();
+    // get search query
+    const query = searchView.getQuery();
+    if (!query) return;
+
+    // Load search results
+    await model.loadSearchResults(query);
+  } catch (err) {
+    console.log(err);
+  }
+};
+
 const init = function () {
   recipeView.addHandlerRender(controlRecipes);
+  searchView.addHandlerSearch(controlSearchResults);
 };
-init();*/
+init();
