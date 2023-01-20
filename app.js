@@ -1,10 +1,10 @@
 "use strict";
 
-import * as model from "./js/model.js";
-import recipeView from "./js/views/recipeView.js";
+//import * as model from "./js/model.js";
+//import recipeView from "./js/views/recipeView.js";
 
-import "core-js/stable";
-import "regenerator-runtime/runtime";
+//import "core-js/stable";
+//import "regenerator-runtime/runtime";
 
 // Variables
 // THIS IS THE BUTTON FUNCTIONALITY FOR THE MODAL
@@ -118,13 +118,13 @@ tabsContainer.addEventListener("click", function (e) {
 
 // This is the code for the recipes section
 
-const recipeContainer = document.querySelector(".recipe");
+//const recipeContainer = document.querySelector(".recipe");
 
 //////////////////////////////////////////////
 /////////////Recipe  API   ////////////////////////
 ///////////////////////////////////////////
 
-const controlRecipes = async function () {
+/*const controlRecipes = async function () {
   try {
     const id = window.location.hash.slice(1);
 
@@ -143,4 +143,4 @@ const controlRecipes = async function () {
 const init = function () {
   recipeView.addHandlerRender(controlRecipes);
 };
-init();
+init();*/
