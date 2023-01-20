@@ -1,12 +1,10 @@
 "use strict";
 
-//import * as model from "./js/model";
-//import recipeView from "./js/views/recipeView.js";
-//this is an npm package
-//import icons from "../KitchenPrepApp/referenceLibrary/images";
+import * as model from "./js/model.js";
+import recipeView from "./js/views/recipeView.js";
 
-//import "core-js/stable";
-//import "regenerator-runtime/runtime";
+import "core-js/stable";
+import "regenerator-runtime/runtime";
 
 // Variables
 // THIS IS THE BUTTON FUNCTIONALITY FOR THE MODAL
@@ -123,7 +121,7 @@ tabsContainer.addEventListener("click", function (e) {
 const recipeContainer = document.querySelector(".recipe");
 
 //////////////////////////////////////////////
-/////////////  API   ////////////////////////
+/////////////Recipe  API   ////////////////////////
 ///////////////////////////////////////////
 
 const controlRecipes = async function () {
