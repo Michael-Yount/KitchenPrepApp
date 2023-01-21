@@ -17,7 +17,7 @@
 
     &::before {
       content: "";
-      display: block;
+      display: flex;
       height: 100%;
       width: 100%;
       position: absolute;
@@ -34,7 +34,7 @@
 
   &__img {
     width: 50%;
-    display: block;
+    display: flex;
     height: 50%;
     object-fit: cover;
   }

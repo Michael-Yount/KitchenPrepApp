@@ -15,9 +15,7 @@ class RecipeView extends View {
 
   _generateMarkup() {
     return `<figure class="recipe__fig">
-          <img src="${this._data.img}" alt="${
-      this._data.title
-    }" class="recipe__img" />
+        //removed
           <h1 class="recipe__title">
             <span>${this._data.title}</span>
           </h1>
@@ -26,7 +24,7 @@ class RecipeView extends View {
         <div class="recipe__details">
           <div class="recipe__info">
             <svg class="recipe__info-icon">
-              <use href="src/img/icons.svg#icon-clock"></use>
+              <use href="/referenceLibrary/logos/kitchenPrepAppFavicon.ico"></use>
             </svg>
             <span class="recipe__info-data recipe__info-data--minutes">${
               this._data.cookingTime
@@ -35,7 +33,7 @@ class RecipeView extends View {
           </div>
           <div class="recipe__info">
             <svg class="recipe__info-icon">
-              <use href="src/img/icons.svg#icon-users"></use>
+              <use href="/referenceLibrary/logos/KPALOGO.png"></use>
             </svg>
             <span class="recipe__info-data recipe__info-data--people">${
               this._data.servings
@@ -45,12 +43,12 @@ class RecipeView extends View {
             <div class="recipe__info-buttons">
               <button class="btn--tiny btn--increase-servings">
                 <svg>
-                  <use href="src/img/icons.svg#icon-minus-circle"></use>
+                  <use href="/referenceLibrary/logos/kitchenPrepAppFavicon.ico"></use>
                 </svg>
               </button>
               <button class="btn--tiny btn--increase-servings">
                 <svg>
-                  <use href="src/img/icons.svg#icon-plus-circle"></use>
+                  <use href="/referenceLibrary/logos/kitchenPrepAppFavicon.ico"></use>
                 </svg>
               </button>
             </div>
@@ -58,12 +56,12 @@ class RecipeView extends View {
 
           <div class="recipe__user-generated">
             <svg>
-              <use href="src/img/icons.svg#icon-user"></use>
+              <use href="/referenceLibrary/logos/kitchenPrepAppFavicon.ico"></use>
             </svg>
           </div>
           <button class="btn--round">
             <svg class="">
-              <use href="src/img/icons.svg#icon-bookmark-fill"></use>
+              <use href="/referenceLibrary/logos/kitchenPrepAppFavicon.ico"></use>
             </svg>
           </button>
         </div>
@@ -76,7 +74,7 @@ class RecipeView extends View {
                 return `
               <li class="recipe__ingredient">
               <svg class="recipe__icon">
-                <use href="src/img/icons.svg#icon-check"></use>
+                <use href="/referenceLibrary/logos/kitchenPrepAppFavicon.ico"></use>
               </svg>
               <div class="recipe__quantity">${ing.quantity}</div>
               <div class="recipe__description">
@@ -92,7 +90,7 @@ class RecipeView extends View {
 
             <li class="recipe__ingredient">
               <svg class="recipe__icon">
-                <use href="src/img/icons.svg#icon-check"></use>
+                <use href="/referenceLibrary/logos/kitchenPrepAppFavicon.ico"></use>
               </svg>
               <div class="recipe__quantity">0.5</div>
               <div class="recipe__description">
@@ -119,7 +117,7 @@ class RecipeView extends View {
           >
             <span>Directions</span>
             <svg class="search__icon">
-              <use href="src/img/icons.svg#icon-arrow-right"></use>
+              <use href="/referenceLibrary/logos/kitchenPrepAppFavicon.ico"></use>
             </svg>
           </a>
         </div>
