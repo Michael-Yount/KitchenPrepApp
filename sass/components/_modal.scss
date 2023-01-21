@@ -10,7 +10,8 @@
   transform: translate(-50%, -50%) scale(1);
   transition: 200ms ease-in-out;
   position: fixed;
-  border-bottom: 3px solid white;
+  border-top: 3px solid rgb(34, 32, 32);
+  border-bottom: 3px solid rgb(0, 0, 0);
   border-radius: 5px;
   z-index: 1600;
   width: 700px;
@@ -20,14 +21,12 @@
 
   box-shadow: $box-shadow-dark;
 
-
   &__header {
     padding: 10px 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid $color-white;
-
   }
 
   &__title {
@@ -59,13 +58,8 @@
       font-size: 2rem;
     }
   }
-
- 
-
 }
 
- .hidden {
-
+.hidden {
   display: none;
 }
-
