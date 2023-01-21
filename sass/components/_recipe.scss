@@ -1,3 +1,7 @@
 .recipe {
+  @include respond(phone) {
+    width: 300px;
+  }
+
   position: relative;
 }

@@ -1,5 +1,5 @@
 .header {
-  height: 40vh;
+  height: 55vh;
   background-image: linear-gradient(
     to right bottom,
     $color-secondary,
@@ -26,7 +26,7 @@
 
   &__logo {
     height: 6rem;
-    // opacity: 50%;
+    //opacity: 0%;
 
     @include respond(phone) {
       height: 5rem;
