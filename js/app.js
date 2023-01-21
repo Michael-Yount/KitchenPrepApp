@@ -1,9 +1,9 @@
 "use strict";
 
-import * as model from "./js/model.js";
-import recipeView from "./js/views/recipeView.js";
-import searchView from "./js/views/searchView.js";
-import resultsView from "./js/views/resultsView.js";
+import * as model from "./model.js";
+import recipeView from "./views/recipeView.js";
+import searchView from "./views/searchView.js";
+import resultsView from "./views/resultsView.js";
 //import "./core-js/stable";
 //import "./regenerator-runtime/runtime";
 //import { async } from "regenerator-runtime";

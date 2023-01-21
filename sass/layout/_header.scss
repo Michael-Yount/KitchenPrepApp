@@ -1,5 +1,5 @@
 .header {
-  height: 55vh;
+  height: 40vh;
   background-image: linear-gradient(
     to right bottom,
     $color-secondary,
@@ -11,13 +11,12 @@
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
   padding: 10rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 
   @include respond(phone) {
     clip-path: none;
     padding: 0%;
-    
-    }
+  }
 
   &__logo-box {
     position: absolute;
@@ -30,10 +29,8 @@
     // opacity: 50%;
 
     @include respond(phone) {
-    height:5rem
-    
+      height: 5rem;
     }
-    
   }
 
   &__text--box {
@@ -43,6 +40,4 @@
     transform: translate(-50%, -50%);
     text-align: center;
   }
-
-  
 }
