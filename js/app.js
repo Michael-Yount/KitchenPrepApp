@@ -1,9 +1,9 @@
 "use strict";
 
-import * as model from "./model.js";
-import recipeView from "./views/recipeView.js";
-import searchView from "./views/searchView.js";
-import resultsView from "./views/resultsView.js";
+//import * as model from "./model";
+//import recipeView from "./views/recipeView";
+//import searchView from "./views/searchView";
+//import resultsView from "./views/resultsView";
 //import "./core-js/stable";
 //import "regenerator-runtime/runtime";
 //import { async } from "regenerator-runtime";
@@ -130,7 +130,7 @@ tabsContainer.addEventListener("click", function (e) {
 /////////////Recipe  API   ////////////////////////
 ///////////////////////////////////////////
 
-const controlRecipes = async function () {
+/*const controlRecipes = async function () {
   try {
     const id = window.location.hash.slice(1);
 
@@ -169,4 +169,4 @@ const init = function () {
   recipeView.addHandlerRender(controlRecipes);
   searchView.addHandlerSearch(controlSearchResults);
 };
-init();
+init();*/

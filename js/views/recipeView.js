@@ -1,4 +1,4 @@
-import View from "./View.js";
+import View from "./View";
 
 // TODO add fraction to import
 
